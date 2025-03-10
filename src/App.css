@@ -21,3 +21,26 @@
 .orangecolor{
   color: #DE8404;
 }
+/* landing start */
+.titlebg{
+  background-color: #EFE8FB;
+}
+.title{
+  font-family: "Poppins", Sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+/* landing end */
+/* transform life start */
+.borderstyle{
+  border:2px dotted white;
+}
+.borderstyle2{
+  border:2px dotted var(--yellow);
+}
+.textsizefont{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+}
+/* transform life end */
