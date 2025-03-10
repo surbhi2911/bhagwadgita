@@ -3,9 +3,9 @@ import Landingsec from './Landingsec';
 
 function Home() {
   return (
-  <>
-  <Landingsec/>
-  </>
+    <>
+      <Landingsec />
+    </>
   );
 }
 
