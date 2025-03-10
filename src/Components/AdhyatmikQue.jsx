@@ -31,7 +31,7 @@ function AdhyatmikQue() {
          </div>
    
          <div className="container py-3 py-lg-5">
-   <div className="row">
+   <div className="row g-3">
    <div className="col-12 col-lg-6">
    <div className="h-100">
        <img src="https://geeta.paraspandhi.com/wp-content/uploads/2024/06/2final.jpeg" alt="" className='img-fluid object-fit-cover rounded-4 border border-2 '/>
@@ -44,7 +44,7 @@ function AdhyatmikQue() {
                    return(
                        <div className='d-flex align-items-center py-1 '>
                        <div className='fs-5 d-flex align-items-center justify-content-center'><FaHandPointRight /></div>
-                       <div className='ps-2 fs-5'>{x.pera}</div>
+                       <div className='ps-2 pera'>{x.pera}</div>
                    </div>
                    )
                })
@@ -65,7 +65,7 @@ function AdhyatmikQue() {
 "Unfold the Bhagwad Geeta Gyan with the Paras Pandhi
 along with some <span className='orangecolor'>Eminent Speakers of India</span>"
 </div>
-<div className="row d-flex justify-content-center py-5">
+<div className="row  d-flex justify-content-center py-5">
     <div className="col-12 col-md-6 col-lg-6">
         <img src="https://geeta.paraspandhi.com/wp-content/uploads/2024/07/1.UNFOLD-THE-BHAGWAD-GEETA-GYAN-WITH-THE-PARAS-PANDHI-ALONG-WITH-1-2048x1645.jpg" alt="" className='img-fluid w-100 h-100 rounded-4 border border-secondary border-3' />
     </div>

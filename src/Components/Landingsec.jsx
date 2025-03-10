@@ -35,9 +35,13 @@ let detail=[
                     <div className='text-center text-white fw-bold'>
                         <h2 className='title py-3'><span className='text-danger'> Live </span> Workshop in <span className="yellowcolor">Surat</span></h2>
                     </div>
-<div className='w-50 mx-auto'>
+                    <div className="row d-flex justify-content-center py-3 py-md-5">
+    <div className="col-12 col-md-6 col-lg-6">
     <img src="https://geeta.paraspandhi.com/wp-content/uploads/2024/07/Untitled-design-2024-07-17T175458.742.jpg" alt="" className='img-fluid object-fit-cover rounded-4 border border-secondary border-4 w-100 h-100' />
+    </div>
 </div>
+
+
 
 <div className="lightviolet mt-4">
     <div className="row px-1 d-flex align-items-center mx-1 justify-content-center">

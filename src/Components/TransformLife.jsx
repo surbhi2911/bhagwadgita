@@ -44,11 +44,11 @@ function TransformLife() {
 
       <div className="container">
         <div className="row pt-3 pt-md-5 d-flex align-items-center
-        justify-content-center py-3">
+        justify-content-center ">
          {
             transform.map((x,i)=>{
                 return(
-                    <div className="col-12 col-md-3 px-3" key={i}>
+                    <div className="col-12 col-md-3 px-3 my-3" key={i}>
                     <div className="h-100 darkviolet  borderstyle p-2">
                         <div className='text-white d-flex align-items-center justify-content-center'>
                             <div className='display-6  d-flex align-items-center justify-content-center'>{x.icon}</div>
@@ -70,11 +70,11 @@ function TransformLife() {
 
 
     <div className="row pb-3 pb-md-5 d-flex align-items-center
-        justify-content-center py-3">
+        justify-content-center ">
          {
             transform2.map((x,i)=>{
                 return(
-                    <div className="col-12 col-md-3 px-3" key={i}>
+                    <div className="col-12 col-md-3 px-3 my-3" key={i}>
                     <div className="h-100 darkviolet  borderstyle2 p-2">
                         <div className='text-white d-flex align-items-center justify-content-center'>
                             <div className='display-6  d-flex align-items-center justify-content-center'>{x.icon}</div>

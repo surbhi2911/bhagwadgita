@@ -28,7 +28,7 @@ function LifeQue() {
       </div>
 
       <div className="container py-3 py-lg-5">
-<div className="row">
+<div className="row g-3">
     <div className="col-12 col-lg-6 ">
         <div className="h-100 text-white d-flex flex-column justify-content-center ">
           {
@@ -36,7 +36,7 @@ function LifeQue() {
                 return(
                     <div className='d-flex align-items-center py-1 '>
                     <div className='fs-5 d-flex align-items-center justify-content-center'><FaHandPointRight /></div>
-                    <div className='ps-2 fs-5'>{x.pera}</div>
+                    <div className='ps-2 pera'>{x.pera}</div>
                 </div>
                 )
             })
