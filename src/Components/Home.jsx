@@ -1,10 +1,11 @@
 import React from 'react';
+import Landingsec from './Landingsec';
 
 function Home() {
   return (
-    <div>
-      vbujo,
-    </div>
+  <>
+  <Landingsec/>
+  </>
   );
 }
 

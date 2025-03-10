@@ -9,3 +9,15 @@
   --lightviolet:#120B2A;
   --darkviolet:#06001C;
 }
+.darkviolet{
+  background-color: var(--darkviolet);
+}
+.lightviolet{
+  background-color: var(--lightviolet);
+}
+.yellowcolor{
+  color: #FFC000;
+}
+.orangecolor{
+  color: #DE8404;
+}
