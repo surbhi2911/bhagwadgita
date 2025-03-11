@@ -29,7 +29,7 @@ function Buynow() {
                                     <div className='my-3'>
                                         <div className='fw-bold'>Contact Us :</div>
                                         <a href="mailto:info@paraspandhi.com" className='text-decoration-none text-dark contact_menu'>
-                                            <div className='my-1'><IoMail /> <span mailto:classname='mx-2'>info@paraspandhi.com</span></div>
+                                        <div className='my-1'><IoMail /> <span classname='mx-2'>info@paraspandhi.com</span></div>
                                         </a>
                                         <a href="tel:9909919894" className='text-decoration-none text-dark contact_menu'>
                                             <div><MdCall /> <span className='mx-2'>9909919894</span></div>
