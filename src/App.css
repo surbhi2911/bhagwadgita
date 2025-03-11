@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap");
 
 * {
   padding: 0;
@@ -14,10 +14,10 @@
 }
 
 :root {
-  --yellow: #FFC000;
-  --orange: #DE8404;
-  --lightviolet: #120B2A;
-  --darkviolet: #06001C;
+  --yellow: #ffc000;
+  --orange: #de8404;
+  --lightviolet: #120b2a;
+  --darkviolet: #06001c;
 }
 
 .darkviolet {
@@ -29,11 +29,11 @@
 }
 
 .yellowcolor {
-  color: #FFC000;
+  color: #ffc000;
 }
 
 .orangecolor {
-  color: #DE8404;
+  color: #de8404;
 }
 
 .buttons {
@@ -41,12 +41,12 @@
 }
 
 .buttons:hover {
-  background-color: #D60414;
+  background-color: #d60414;
 }
 
 /* landing start */
 .titlebg {
-  background-color: #EFE8FB;
+  background-color: #efe8fb;
 }
 
 .title {
@@ -59,7 +59,7 @@
   font-size: 18px;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .title {
     font-size: 30px !important;
   }
@@ -71,7 +71,7 @@
 
 /* landing end */
 /* life que start */
-.bgparas{
+.bgparas {
   background-image: url("https://media.istockphoto.com/id/173857004/photo/peacock-feathers.jpg?s=612x612&w=0&k=20&c=UNlENkeI_bo60OjMLW06P2MsENHFGFD8hMSTajkKLJk=");
   background-image: url("https://img.freepik.com/premium-photo/bright-peacock-feather-pattern-seamless-background_1295366-22121.jpg");
   background-repeat: no-repeat;
@@ -95,7 +95,6 @@
 }
 
 /* transform life end */
-
 
 /* image grid start */
 .containerimg {
@@ -134,7 +133,6 @@
 
 .smallimage {
   height: 200px;
-
 }
 
 /*  Only Modify Mobile View */
@@ -150,7 +148,6 @@
 
   .containerimg {
     display: block;
-
   }
 }
 
@@ -166,6 +163,7 @@
 }
 
 /* footer end */
+
 /* buy now form start */
 @media (min-width: 992px) {
   .TicketForm_bg::before {
@@ -180,7 +178,6 @@
     background-size: cover;
     background-position: center;
   }
-
   .TicketForm_bg::after {
     content: "";
     position: absolute;
@@ -191,30 +188,37 @@
     background-color: white;
   }
 }
-
 @media (max-width: 991px) {
-
   .TicketForm_bg::before,
   .TicketForm_bg::after {
     content: none;
   }
 }
-
 .contact_menu {
   transition: all 0.3s ease-in-out;
 }
-
 .contact_menu:hover {
   color: var(--orange) !important;
 }
-
 .input_form {
   outline: none;
   transition: all 0.3s ease-in-out;
 }
-
 .input_form:hover {
   border: 1px solid var(--orange) !important;
 }
-
+.popup-overlay {
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.popup-content {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+.popup-content button {
+  background: var(--orange);
+}
 /* buy now form end */
