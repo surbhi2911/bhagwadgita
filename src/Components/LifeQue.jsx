@@ -23,7 +23,7 @@ function LifeQue() {
   return (
    <>
     <div className='darkviolet py-5'>
-       <div className=" yellowcolor lightviolet title  text-center">
+       <div className="gujfont yellowcolor lightviolet title  text-center">
        વ્યવહારિક જીવનના પ્રશ્નો
       </div>
 
@@ -36,7 +36,7 @@ function LifeQue() {
                 return(
                     <div className='d-flex align-items-center py-1 '>
                     <div className='fs-5 d-flex align-items-center justify-content-center'><FaHandPointRight /></div>
-                    <div className='ps-2 pera'>{x.pera}</div>
+                    <div className='ps-2 pera gujfont'>{x.pera}</div>
                 </div>
                 )
             })
