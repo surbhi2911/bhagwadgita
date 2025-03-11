@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
     return (
         <div className='text-center py-5 text-light' style={{ boxShadow: "inset rgba(0, 0, 0, 0.58) 0px 0px 0px 1500px", backgroundImage: "url(https://static.toiimg.com/thumb/msid-94595399,width-1280,height-720,resizemode-72/94595399.jpg)", backgroundRepeat: 'no-repeat', backgroundSize: "cover" }}>
-            <div>
+            <div className='container'>
                 <div style={{ fontFamily: "Sora, Sans-serif" }}>
                     <p className='h3'>Workshop Venue : Zoology Hall, Gujarat University Navrangpura, Ahmedabad</p>
                     <p className='h3 p-4 pb-0'><span className="p-1 px-3 rounded-4" style={{ backgroundColor: "#f17f00" }}>TO BOOK YOUR SEAT CALL NOW</span></p>

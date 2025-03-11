@@ -1,124 +1,38 @@
-// import React from 'react';
+import React from "react";
 
-// function Imagegrid() {
-//   return (
-//     <>
-//     <div className="darkviolet">
-// <div className="container p-3 p-lg-5">
-//     <h2 className=" text-white text-center py-3 fw-bold">
-//     પારસ પાંધીના સફળ કાર્યક્રમો
-//     </h2>
-
-
-
-
-//     <div>
-
-
-//     </div>
-// </div>
-//     </div>
-//     </>
-//   );
-// }
-
-// export default Imagegrid;
-import * as React from 'react';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import { useMediaQuery } from '@mui/material';
-
-function srcset(image, size, rows = 1, cols = 1) {
-    return {
-        src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-        srcSet: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`,
-    };
-}
-
-export default function ImageGrid() {
-    const isMobile = useMediaQuery('(max-width:600px)');
-
-    return (
-        <div className="darkviolet">
-            <div className="container">
-                <div className="p-4 ">
-                    <h2 className="text-white text-center py-3 font-bold text-lg md:text-2xl">
-                        પારસ પાંધીના સફળ કાર્યક્રમો
-                    </h2>
-                    <ImageList
-                        sx={{ width: '100%', maxWidth: 800, height: 'auto' }}
-                        variant="quilted"
-                        cols={isMobile ? 2 : 4}
-                        // rowHeight={121}
-                        className='mx-auto'
-                    >
-                        {itemData.map((item) => (
-                            <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-                                <img
-                                    {...srcset(item.img, 121, item.rows, item.cols)}
-                                    alt={item.title}
-                                    loading="lazy"
-                                    className="rounded-lg shadow-md"
-                                />
-                            </ImageListItem>
-                        ))}
-                    </ImageList>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-const itemData = [
-    {
-        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-        title: 'Breakfast',
-        rows: 2,
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-        title: 'Burger',
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-        title: 'Coffee',
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-        title: 'Hats',
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-        title: 'Honey',
-        author: '@arwinneil',
-        rows: 2,
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-        title: 'Basketball',
-        cols: 2
-    },
-
-    {
-        img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-        title: 'Mushrooms',
-        rows: 2,
-        cols: 2,
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-        title: 'Tomato basil',
-        cols: 2,
-
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-        title: 'Bike',
-        cols: 2,
-    },
+const images = [
+    { src: "https://geeta.paraspandhi.com/wp-content/uploads/2024/06/1-1024x576.jpg", alt: "Image 1", className: "col-span-2 row-span-2 imgheightclass" },
+    { src: require("../Images/1B7A7946.jpg"), alt: "Image 2", className:"smallimage"},
+    { src: require("../Images/untitled-1-22.jpg"), alt: "Image 3", className:"smallimage" },
+    { src: require("../Images/6B1A4723.JPG"), alt: "Image 4" , className:"smallimage"},
+    { src: "https://geeta.paraspandhi.com/wp-content/uploads/2024/06/3-1024x576.jpg", alt: "Image 6", className: "row-span-2  col-span-2 imgheightclass" },
+    { src: require("../Images/6B1A5960.jpg"), alt: "Image 5" , className:"smallimage"},
+    { src: "https://geeta.paraspandhi.com/wp-content/uploads/2024/06/4-1024x576.jpg", alt: "Image 7", className: "col-span-2 row-span-2 imgheightclass" },
+    { src: require("../Images/untitled-1.jpg"), alt: "Image 8" , className:"smallimage"},
+    { src: "https://geeta.paraspandhi.com/wp-content/uploads/2024/06/11-1024x576.jpg", alt: "Image 9" , className:"smallimage"},
 ];
+
+const ImageGrid = () => {
+    return (
+        <>
+            <div className="darkviolet py-5">
+                <div className="container">                
+                <div className="gujfont text-white  title  text-center py-3">
+                    પારસ પાંધીના સફળ કાર્યક્રમો
+                </div>
+
+                    <div className="containerimg mx-auto">
+                        {images.map((image, index) => (
+                            <div key={index} className={`image-box text-white my-3 my-md-0  ${image.className || ""}`}>
+                                <img src={image.src} alt={image.alt} className="img-fluid object-fit-cover" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+            </div>
+        </>
+    );
+};
+
+export default ImageGrid;

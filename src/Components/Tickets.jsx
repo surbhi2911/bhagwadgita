@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Tickets() {
     return (
@@ -10,9 +11,9 @@ function Tickets() {
                         <div className='rounded rounded-bottom-0 my-3' style={{ background: '#d37c00' }}>
                             <div className='py-4' style={{ fontFamily: "Sora, Sans-serif", fontSize: "30px", fontWeight: 800, textTransform: "uppercase", lineHeight: "36px" }}>Ticket<br />₹ 200</div>
                         </div>
-                        <div className=''>
-                            <button className='buttons w-100 btn text-light' type="button" style={{ fontFamily: "Sora, Sans-serif", fontWeight: 700 }}>Buy Now</button>
-                        </div>
+                        <Link to={"/buynow"} className='text-decoration-none'>
+                            <button  className='buttons w-100 btn text-light' type="button" style={{ fontFamily: "Sora, Sans-serif", fontWeight: 700 }}>Buy Now</button>
+                        </Link>
                     </div>
                 </div>
             </div>
