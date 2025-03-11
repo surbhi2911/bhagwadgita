@@ -12,22 +12,27 @@
 .gujfont {
   font-family: "Hind Vadodara";
 }
-:root{
-  --yellow:#FFC000;
-  --orange:#DE8404;
-  --lightviolet:#120B2A;
-  --darkviolet:#06001C;
+
+:root {
+  --yellow: #FFC000;
+  --orange: #DE8404;
+  --lightviolet: #120B2A;
+  --darkviolet: #06001C;
 }
-.darkviolet{
+
+.darkviolet {
   background-color: var(--darkviolet);
 }
-.lightviolet{
+
+.lightviolet {
   background-color: var(--lightviolet);
 }
-.yellowcolor{
+
+.yellowcolor {
   color: #FFC000;
 }
-.orangecolor{
+
+.orangecolor {
   color: #DE8404;
 }
 
@@ -38,46 +43,61 @@
 .buttons:hover {
   background-color: #D60414;
 }
+
 /* landing start */
-.titlebg{
+.titlebg {
   background-color: #EFE8FB;
 }
-.title{
+
+.title {
   font-family: "Poppins", Sans-serif;
   font-size: 40px;
   font-weight: 600;
 }
-.pera{
+
+.pera {
   font-size: 18px;
 }
-@media only screen and (max-width:768px){
-  .title{
+
+@media only screen and (max-width:768px) {
+  .title {
     font-size: 30px !important;
   }
-  .pera{
+
+  .pera {
     font-size: 15px;
   }
 }
+
 /* landing end */
+/* life que start */
+.bgparas{
+  background-image: url("https://media.istockphoto.com/id/173857004/photo/peacock-feathers.jpg?s=612x612&w=0&k=20&c=UNlENkeI_bo60OjMLW06P2MsENHFGFD8hMSTajkKLJk=");
+  background-image: url("https://img.freepik.com/premium-photo/bright-peacock-feather-pattern-seamless-background_1295366-22121.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 1500px 1000px #06001caf;
+}
+/* life que end */
 /* transform life start */
-.borderstyle{
-  border:2px dotted white;
+.borderstyle {
+  border: 2px dotted white;
 }
-.borderstyle2{
-  border:2px dotted var(--yellow);
+
+.borderstyle2 {
+  border: 2px dotted var(--yellow);
 }
-.textsizefont{
+
+.textsizefont {
   font-size: 48px;
   font-weight: 700;
   line-height: 50px;
 }
+
 /* transform life end */
 
 
 /* image grid start */
-/* Default grid settings remain unchanged for large screens */
-
-
 .containerimg {
   /* width: 90%; */
   display: grid;
@@ -100,32 +120,52 @@
 }
 
 /* Grid Column Spanning */
-.row-span-2 { grid-row: span 2; }
-.col-span-2 { grid-column: span 2; }
-.imgheightclass{
+.row-span-2 {
+  grid-row: span 2;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.imgheightclass {
   height: 430px;
 }
-.smallimage{
+
+.smallimage {
   height: 200px;
 
 }
+
 /*  Only Modify Mobile View */
 @media (max-width: 768px) {
   .image-box {
-    grid-column: span 1 !important; /* Make each image take full width */
+    grid-column: span 1 !important;
+    /* Make each image take full width */
   }
-  .imgheightclass{
+
+  .imgheightclass {
     height: 200px;
   }
-.containerimg{
-  display: block;
- 
-}
+
+  .containerimg {
+    display: block;
+
+  }
 }
 
 /* image grid  end */
 
+/* footer start */
+.footerbg {
+  box-shadow: inset rgba(0, 0, 0, 0.58) 0px 0px 0px 1500px;
+  background-image: url("https://feeds.abplive.com/onecms/images/uploaded-images/2022/06/19/885dd014b10e3e8111e4cfc8a4aefabdc07f0.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+/* footer end */
 /* buy now form start */
 @media (min-width: 992px) {
   .TicketForm_bg::before {
@@ -140,6 +180,7 @@
     background-size: cover;
     background-position: center;
   }
+
   .TicketForm_bg::after {
     content: "";
     position: absolute;
@@ -150,23 +191,30 @@
     background-color: white;
   }
 }
+
 @media (max-width: 991px) {
+
   .TicketForm_bg::before,
   .TicketForm_bg::after {
     content: none;
   }
 }
+
 .contact_menu {
   transition: all 0.3s ease-in-out;
 }
+
 .contact_menu:hover {
-  color: #de8404 !important;
+  color: var(--orange) !important;
 }
+
 .input_form {
   outline: none;
   transition: all 0.3s ease-in-out;
 }
+
 .input_form:hover {
-  border: 1px solid #de8404 !important;
+  border: 1px solid var(--orange) !important;
 }
+
 /* buy now form end */

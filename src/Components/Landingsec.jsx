@@ -8,7 +8,7 @@ let detail=[
     {
         icon:<FiClock />,
         title:"Time :",
-        detail:"02:00 PM to 08:00 PM",
+        detail:"08:30 PM to 11:30 PM",
         col:"col-12 col-md-3"
     },
     {
@@ -20,7 +20,7 @@ let detail=[
     {
         icon:<HiOutlineLocationMarker />,
         title:"Venue:",
-        detail:"Sardar Patel Smruti Bhavan - Varachha Main Road Hira Nagar Road, Mini Bazar, Khodiyar Nagar, Surat. ",
+        detail:"Sardar Patel Smruti Bhavan - Varachha Main Road Hira Nagar, Mini Bazar, Khodiyar Nagar, Surat. ",
         col:"col-12 col-md-6"
     },
 ]
