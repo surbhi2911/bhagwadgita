@@ -1,5 +1,6 @@
 import { IoMail } from "react-icons/io5"
 import { MdCall } from "react-icons/md"
+import { Link } from "react-router-dom"
 
 function Buynow() {
     return (
@@ -28,12 +29,12 @@ function Buynow() {
                                     </div>
                                     <div className='my-3'>
                                         <div className='fw-bold'>Contact Us :</div>
-                                        <a href="mailto:info@paraspandhi.com" className='text-decoration-none text-dark contact_menu'>
-                                        <div className='my-1'><IoMail /> <span classname='mx-2'>info@paraspandhi.com</span></div>
-                                        </a>
-                                        <a href="tel:9909919894" className='text-decoration-none text-dark contact_menu'>
-                                            <div><MdCall /> <span className='mx-2'>9909919894</span></div>
-                                        </a>
+                                        <Link to={"mailto:info@paraspandhi.com"} className='text-decoration-none text-dark contact_menu'>
+                                            <div className='my-1'><IoMail className="me-2" /> <span>info@paraspandhi.com</span></div>
+                                        </Link>
+                                        <Link to={"tel:9909919894"} className='text-decoration-none text-dark contact_menu'>
+                                            <div><MdCall className="me-2" /> <span>9909919894</span></div>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
