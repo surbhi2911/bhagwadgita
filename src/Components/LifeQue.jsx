@@ -51,7 +51,7 @@ function LifeQue() {
 </div>
       </div>
     </div>
-    <div className="lightviolet py-3 py-lg-5">
+    <div className=" py-3 py-lg-5 bgparas">
 <div className=' text-center  container' >
   <div className="row d-flex align-items-center justify-content-center">
     <div className="col-12 col-md-6 col-lg-7">
