@@ -8,6 +8,7 @@ function Buynow() {
     const [obj, setobj] = useState({});
     let [blankobj, setblankobj] = useState({});
     const [savedId, setSavedId] = useState(null);
+    const [errormsg, seterrormsg] = useState({});
 
     const getdata = (e) => {
         const { name, value } = e.target;
@@ -15,15 +16,89 @@ function Buynow() {
         blankobj[name] = "";
         setobj({ ...obj });
         setblankobj({ ...blankobj });
+
+        if (e.target.name === "name") {
+            if (e.target.value === "" || e.target.value === undefined) {
+                errormsg[e.target.name] = "Name is required!";
+            } else if (!/^[a-zA-Z ]{1,40}$/.test(e.target.value)) {
+                errormsg[e.target.name] = "Name must be alaphabet.";
+            } else {
+                errormsg[e.target.name] = "";
+            }
+        }
+
+        if (e.target.name === "email") {
+            if (e.target.value === "" || e.target.value === undefined) {
+                errormsg[e.target.name] = "E-mail is required!";
+            } else if (!e.target.value.includes("@gmail") && !e.target.value.includes("@yahoo")) {
+                errormsg[e.target.name] = "E-mail is not valid.";
+            } else {
+                errormsg[e.target.name] = "";
+            }
+        }
+
+        if (e.target.name === "phnumber") {
+            if (e.target.value === "" || e.target.value === undefined) {
+                errormsg[e.target.name] = "Phone Number is required!";
+            } else if (e.target.value.length < 10) {
+                errormsg[e.target.name] = "Phone Number must be 10 digits.";
+            } else if (e.target.value.length > 10) {
+                errormsg[e.target.name] = "Phone Number is not valid.";
+            } else {
+                errormsg[e.target.name] = "";
+            }
+        }
+
+        if (e.target.name === "address") {
+            if (e.target.value === "" || e.target.value === undefined) {
+                errormsg[e.target.name] = "Address is required!";
+            } else {
+                errormsg[e.target.name] = "";
+            }
+        }
+
+        if (e.target.name === "area") {
+            if (e.target.value === "" || e.target.value === "Select Near Area") {
+                errormsg[e.target.name] = "Please select a valid area!";
+            } else {
+                errormsg[e.target.name] = "";
+            }
+        }
+
+        seterrormsg({ ...errormsg });
     };
 
     const savedata = () => {
 
-        axios.post("https://geeta-backend.vercel.app/", obj).then((res) => {
-            console.log(res.data);
-            setSavedId(res.data._id);
-            setobj({ ...blankobj });
-        });
+        if (!obj.name === "" || obj.name === undefined) {
+            errormsg.name = "Name is required!";
+        }
+
+        if (!obj.email === "" || obj.email === undefined) {
+            errormsg.email = "E-mail is required!";
+        }
+
+        if (!obj.phnumber === "" || obj.phnumber === undefined) {
+            errormsg.phnumber = "Phone Number is required!";
+        }
+
+        if (!obj.address === "" || obj.address === undefined) {
+            errormsg.address = "Address is required!";
+        }
+
+        if (!obj.area || obj.area === "Select Near Area") {
+            errormsg.area = "Please select a valid area!";
+        }
+
+        if (Object.values(errormsg).every((x) => x === "")) {
+            axios.post("https://geeta-backend.vercel.app/", obj).then((res) => {
+                console.log(res.data);
+                setSavedId(res.data._id);
+                setobj({ ...blankobj });
+
+            });
+        }
+        seterrormsg({ ...errormsg });
     };
 
     return (
@@ -40,15 +115,15 @@ function Buynow() {
                                         </div>
                                         <div className="title fs-5">Paras Pandhi</div>
                                     </div>
-                                    <div className="title fs-3 mt-3 mb-2">Live Workshop in Ahmedabad</div>
+                                    <div className="title fs-3 mt-3 mb-2">Live Workshop in Surat</div>
                                     <div className="rounded" style={{ width: "50px", border: "3px solid var(--orange)" }}></div>
                                     <div className="my-3">
                                         <div><span className="fw-bold">Date :</span> 9, 10, 11 April 2025</div>
-                                        <div className="my-1"><span className="fw-bold">Time :</span> 08:30 PM to 11:30 PM</div>
+                                        <div className="my-1"><span className="fw-bold">Time :</span> 08:00 PM to 11:30 PM</div>
                                         <div><span className="fw-bold">Venue :</span> Sardar Patel Smruti Bhavan - Varachha Main Road Hira Nagar, Mini Bazar, Khodiyar Nagar, Surat.</div>
                                     </div>
                                     <div className="w-100 h-100">
-                                        <img src="https://s3.ap-south-1.amazonaws.com/rzp-prod-merchant-assets/payment-link/description/oamaj49fo6u70i.jpeg" className="img-fluid object-fit-cover" alt="" />
+                                        <img src={require("../Images/ImportedPhoto_1741755792907.jpg")} className="img-fluid object-fit-cover rounded w-100 h-100" alt="" />
                                     </div>
                                     <div className="my-3">
                                         <div className="fw-bold">Contact Us :</div>
@@ -61,31 +136,35 @@ function Buynow() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-lg-6 px-4 pb-4 p-lg-5">
+                            <div className="col-12 col-lg-6 px-2 pb-4 p-lg-5">
                                 <div className="h-100">
                                     <div className="bg-white shadow p-4">
-                                        <div className="title fs-5"> Payment Details</div>
+                                        <div className="title fs-5">Workshop Registration Form</div>
                                         <div className="rounded mt-2" style={{ width: "50px", border: "3px solid var(--orange)" }}></div>
                                         <div className="w-100 mt-4">
                                             <label htmlFor="name" className="w-25">Name</label>
                                             <input type="text" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="name" value={obj.name} onChange={getdata} id="name" />
+                                            <div className='text-danger w-75 ms-auto'>{errormsg.name}</div>
                                         </div>
                                         <div className="w-100 my-4">
                                             <label htmlFor="email" className="w-25">Email</label>
                                             <input type="text" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="email" value={obj.email} onChange={getdata} id="email" />
+                                            <div className='text-danger w-75 ms-auto'>{errormsg.email}</div>
                                         </div>
                                         <div className="w-100">
                                             <label htmlFor="phone" className="w-25">Phone</label>
                                             <input type="number" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="phnumber" value={obj.phnumber} onChange={getdata} id="phone" />
+                                            <div className='text-danger w-75 ms-auto'>{errormsg.phnumber}</div>
                                         </div>
                                         <div className="w-100 my-4">
-                                            <label htmlFor="phone" className="w-25">Add.</label>
-                                            <input type="text" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="address" value={obj.address} onChange={getdata} id="phone" />
+                                            <label htmlFor="address" className="w-25">Address</label>
+                                            <input type="text" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="address" value={obj.address} onChange={getdata} id="address" />
+                                            <div className='text-danger w-75 ms-auto'>{errormsg.address}</div>
                                         </div>
                                         <div className="w-100">
-                                            <label htmlFor="myDropdown" className="w-25">Area</label>
-                                            <select id="myDropdown" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="area" value={obj.area} onChange={getdata}>
-                                                <option value="Select Near Area">Select Near Area</option>
+                                            <label htmlFor="area" className="w-25">Area</label>
+                                            <select id="area" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="area" value={obj.area} onChange={getdata}>
+                                                <option value="Select Nearest Area">Select Nearest Area</option>
                                                 <option value="Yogi Chowk">Yogi Chowk</option>
                                                 <option value="Hirabag">Hirabag</option>
                                                 <option value="Station">Station</option>
@@ -97,6 +176,7 @@ function Buynow() {
                                                 <option value="Punagam">Punagam</option>
                                                 <option value="Vesu">Vesu</option>
                                             </select>
+                                            <div className='text-danger w-75 ms-auto'>{errormsg.area}</div>
                                         </div>
                                         <div className="w-100 mt-4">
                                             <Link to={""} className="text-decoration-none">
@@ -121,7 +201,7 @@ function Buynow() {
                             navigator.clipboard.writeText(savedId);
                             setSavedId(null);
                         }}>Copy ID</button>
-                        <div className="fw-bold mt-3">ID જરૂરી છે, તેથી તેને સાચવી રાખો અને કૉપિ કરવાનું ભૂલશો નહીં.</div>
+                        <div className="fw-bold mt-3">રજીસ્ટ્રેશન માટે ID જરૂરી છે, તેથી તેને સાચવી રાખજો અને કૉપિ કરવાનું ભૂલશો નહીં.</div>
                     </div>
                 </div>
             )}
