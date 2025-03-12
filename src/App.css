@@ -41,7 +41,7 @@
 }
 
 .buttons:hover {
-  background-color: #d60414;
+  background-color: var(--orange);
 }
 
 /* landing start */
@@ -93,6 +93,10 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 50px;
+}
+
+.textheight {
+  line-height: 1.6
 }
 
 /* transform life end */
@@ -238,17 +242,25 @@
 
 /* mui css */
 
-.css-47m1dp-MuiTableCell-root,.css-mfzv8e-MuiTableCell-root {
+.css-47m1dp-MuiTableCell-root,
+.css-mfzv8e-MuiTableCell-root {
   display: none !important;
 }
-.css-1orzuox-MuiTableCell-root{
-background-color: var(--darkviolet) !important;
-color: white !important;
-border: 1px solid white;
-font-weight:700 !important ;
+
+.css-1orzuox-MuiTableCell-root {
+  background-color: var(--darkviolet) !important;
+  color: white !important;
+  border: 1px solid white;
+  font-weight: 700 !important;
 }
+
 .css-1dc80h3-MuiTableCell-root {
-border: 1px solid gray;
+  border: 1px solid gray;
 
 }
+
 /* mui css */
+
+.form-control:focus {
+  box-shadow: none !important;
+}

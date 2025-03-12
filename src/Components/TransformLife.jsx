@@ -39,8 +39,8 @@ function TransformLife() {
       <div className=" darkviolet orangecolor title  text-center">
       Transform Your Life
       </div>
-      <h3 className='text-white text-capitalize title container text-center p-2'>WHO SHOULD <span className='text-success'>ATTEND</span> THIS <span className='text-success border-bottom border-success border-4'>
-      GRAND BHAGWAD GEETA COURCE</span></h3>
+      <h3 className='text-white text-capitalize title container text-center p-2 textheight '>WHO SHOULD <span className='text-success'>ATTEND</span> THIS <span className='text-success border-bottom border-success border-4'>
+      GRAND BHAGAVAD GITA COURCE</span></h3>
 
       <div className="container">
         <div className="row pt-3 pt-md-5 d-flex align-items-center
@@ -63,7 +63,7 @@ function TransformLife() {
 
     <div className="text-center py-3">
     <h1 className="text-white   title">
-        Most Importantly, Who Should not miss this
+        Most Importantly, Who Should Not Miss This
         </h1>
         <div className='orangecolor textsizefont '>"Golden Opportunity"</div>
     </div>
