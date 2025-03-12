@@ -40,7 +40,8 @@ function AdhyatmikQue() {
         {
             src: require("../Images/Narola_Shine_Within_Blue_page-0001-removebg-preview.png"),
             alt: "Narola"
-        }
+        },
+       
     ];
 
     return (
@@ -97,6 +98,23 @@ function AdhyatmikQue() {
                                 </div>
                             </div>
                         ))}
+                    </div>
+
+                    <div className='title text-white text-center px-2 px-md-4 my-3 my-lg-5'>
+                        " <span className='orangecolor'>BHAGWAD GEETA COURCE </span> Media Partner"
+                    </div>
+                    <div className="row d-flex text-center justify-content-center">
+                       
+                            <div  className="col-12 col-md-6 col-lg-3 col-sm-6 mb-4">
+                                <div className="d-flex justify-content-center bg-white border border-2 border-secondary rounded-3 w-100 h-100">
+                                <img
+                                        src={require("../Images/City Tadka logo.jpg")}
+                                        alt=""
+                                        className="img-fluid rounded-3 object-fit-contain"
+                                    />
+                                </div>
+                            </div>
+                      
                     </div>
                 </div>
             </div>

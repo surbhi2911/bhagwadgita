@@ -40,7 +40,7 @@ function TransformLife() {
       Transform Your Life
       </div>
       <h3 className='text-white text-capitalize title container text-center p-2'>WHO SHOULD <span className='text-success'>ATTEND</span> THIS <span className='text-success border-bottom border-success border-4'>
-      GRAND OFFLINE WORKSHOP</span></h3>
+      GRAND BHAGWAD GEETA COURCE</span></h3>
 
       <div className="container">
         <div className="row pt-3 pt-md-5 d-flex align-items-center
