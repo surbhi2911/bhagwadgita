@@ -21,7 +21,7 @@
 }
 
 .darkviolet {
-  background-color: var(--darkviolet);
+  background-color: var(--darkviolet) !important;
 }
 
 .lightviolet {
@@ -78,6 +78,7 @@
   background-size: cover;
   box-shadow: inset 0px 0px 1500px 1000px #06001caf;
 }
+
 /* life que end */
 /* transform life start */
 .borderstyle {
@@ -178,6 +179,7 @@
     background-size: cover;
     background-position: center;
   }
+
   .TicketForm_bg::after {
     content: "";
     position: absolute;
@@ -188,37 +190,65 @@
     background-color: white;
   }
 }
+
 @media (max-width: 991px) {
+
   .TicketForm_bg::before,
   .TicketForm_bg::after {
     content: none;
   }
 }
+
 .contact_menu {
   transition: all 0.3s ease-in-out;
 }
+
 .contact_menu:hover {
   color: var(--orange) !important;
 }
+
 .input_form {
   outline: none;
   transition: all 0.3s ease-in-out;
 }
+
 .input_form:hover {
   border: 1px solid var(--orange) !important;
 }
+
 .popup-overlay {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
+
 .popup-content {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   width: 100%;
 }
+
 .popup-content button {
   background: var(--orange);
 }
+
 /* buy now form end */
+
+
+/* mui css */
+
+.css-47m1dp-MuiTableCell-root,.css-mfzv8e-MuiTableCell-root {
+  display: none !important;
+}
+.css-1orzuox-MuiTableCell-root{
+background-color: var(--darkviolet) !important;
+color: white !important;
+border: 1px solid white;
+font-weight:700 !important ;
+}
+.css-1dc80h3-MuiTableCell-root {
+border: 1px solid gray;
+
+}
+/* mui css */
