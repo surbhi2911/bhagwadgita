@@ -94,7 +94,9 @@
   font-weight: 700;
   line-height: 50px;
 }
-
+.textheight{
+  line-height: 1.6
+}
 /* transform life end */
 
 /* image grid start */

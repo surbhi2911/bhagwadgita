@@ -30,6 +30,10 @@ function AdhyatmikQue() {
             alt: "Goldi Solar"
         },
         {
+            src: require("../Images/Narola_Shine_Within_Blue_page-0001-removebg-preview.png"),
+            alt: "Narola"
+        },
+        {
             src: require("../Images/Shivam_Jewels-removebg-preview.png"),
             alt: "Shivam Jewels"
         },
@@ -37,11 +41,6 @@ function AdhyatmikQue() {
             src: require("../Images/SHG_Shri_Hari_Group_Logo_17.0-removebg-preview.png"),
             alt: "SHG Shri Hari Group"
         },
-        {
-            src: require("../Images/Narola_Shine_Within_Blue_page-0001-removebg-preview.png"),
-            alt: "Narola"
-        },
-       
     ];
 
     return (
@@ -89,7 +88,7 @@ function AdhyatmikQue() {
                     <div className="row d-flex text-center justify-content-center mt-5">
                         {logos.map((logo, index) => (
                             <div key={index} className="col-12 col-md-6 col-lg-3 col-sm-6 mb-4">
-                                <div className="d-flex justify-content-center bg-white border border-2 border-secondary rounded-3 w-100 h-100">
+                                <div className="d-flex justify-content-center bg-white w-100 h-100" style={{ border: "5px solid var(--orange)", borderRadius: "0px 30px 0px 30px" }}>
                                     <img
                                         src={logo.src}
                                         alt={logo.alt}
@@ -100,21 +99,20 @@ function AdhyatmikQue() {
                         ))}
                     </div>
 
-                    <div className='title text-white text-center px-2 px-md-4 my-3 my-lg-5'>
-                        " <span className='orangecolor'>BHAGWAD GEETA COURCE </span> Media Partner"
+                    <div className='title text-danger text-center px-2 px-md-4 my-3 my-lg-5'>
+                        "BHAGWAD GEETA COURCE<span className='orangecolor'> Media Partner</span>"
                     </div>
                     <div className="row d-flex text-center justify-content-center">
-                       
-                            <div  className="col-12 col-md-6 col-lg-3 col-sm-6 mb-4">
-                                <div className="d-flex justify-content-center bg-white border border-2 border-secondary rounded-3 w-100 h-100">
+                        <div className="col-12 col-md-6 col-lg-3 col-sm-6 mb-4">
+                            <div className="d-flex justify-content-center bg-white w-100 h-100" style={{ border: "5px solid var(--orange)", borderRadius: "0px 30px 0px 30px" }}>
                                 <img
-                                        src={require("../Images/City Tadka logo.jpg")}
-                                        alt=""
-                                        className="img-fluid rounded-3 object-fit-contain"
-                                    />
-                                </div>
+                                    src={require("../Images/City Tadka logo.jpg")}
+                                    alt=""
+                                    className="img-fluid object-fit-contain"
+                                    style={{ borderRadius: "0px 30px 0px 30px" }}
+                                />
                             </div>
-                      
+                        </div>
                     </div>
                 </div>
             </div>

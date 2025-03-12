@@ -17,7 +17,7 @@ function Home() {
       <AdhyatmikQue/>
       <Imagegrid/>
       <Tickets/>
-      <Form/>
+      {/* <Form/> */}
       <Footer/>
     </>
   );
