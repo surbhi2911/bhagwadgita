@@ -222,7 +222,7 @@ function Buynow() {
                     <div className="popup-content bg-white rounded text-center p-3">
                         <h3>Success!</h3>
                         <p>Your form has been submitted.</p>
-                        <p><strong>Saved ID :</strong> {savedId}</p>
+                        <p><strong>Saved ID : </strong> {savedId}</p>
                         <button className="px-3 py-2 border-0 text-white cursor-pointer rounded" onClick={() => {
                             navigator.clipboard.writeText(savedId);
                             setSavedId(null);
