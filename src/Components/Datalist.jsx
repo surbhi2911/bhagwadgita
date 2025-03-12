@@ -1,5 +1,3 @@
-
-import MUIDataTable from 'mui-datatables';
 import React, { useEffect, useState } from 'react';
 
 const Datalist = () => {
@@ -20,79 +18,57 @@ const Datalist = () => {
             });
     }, []);
 
-    const columns = [
-        {
-            name: "_id",
-            label: "Id",
-            options: {
-                filter: true,
-                sort: false,
-            }
-        },
-        {
-            name: "name",
-            label: "Name",
-            options: {
-                filter: true,
-                sort: false,
-            }
-        },
-        {
-            name: "email",
-            label: "Email",
-            options: {
-                filter: true,
-                sort: false,
-            }
-        },
-        {
-            name: "phnumber",
-            label: "Phone no.",
-            options: {
-                filter: true,
-                sort: false,
-            }
-        },
-        {
-            name: "address",
-            label: "Address",
-            options: {
-                filter: true,
-                sort: false,
-            }
-        },
-        {
-            name: "area",
-            label: "Area",
-            options: {
-                filter: true,
-                sort: false,
-            }
-        },
-    ];
-    if (loading) return <div className="text-center mt-4 d-flex justify-content-center align-items-center vh-100">
-        <img src={require("../Images/loader image.gif")} alt="" className='img-fluid object-fit-contain' />
-    </div>
-    if (error) return <div className="text-center text-danger mt-4">Error: {error.message}</div>;
+    if (loading) {
+        return (
+            <div className="text-center mt-4 d-flex justify-content-center align-items-center vh-100">
+                <img src={require("../Images/loader image.gif")} alt="Loading..." className='img-fluid object-fit-contain' />
+            </div>
+        );
+    }
 
-    const options = {
-        filterType: 'checkbox',
-        responsive: "standard",
-        print: false,
-    };
+    if (error) {
+        return <div className="text-center text-danger mt-4">Error: {error.message}</div>;
+    }
 
     return (
         <>
             <div className='orangecolor text-center p-3 display-6 fw-bold'>REGISTERED PASS DATA</div>
-            <MUIDataTable
-
-                data={data}
-                columns={columns}
-                options={options}
-            />
+            <div className="container">
+                <div className="table-responsive">
+                    <table className="table table-bordered table-striped">
+                        <thead className="table-dark text-center">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone No.</th>
+                                <th>Area</th>
+                                <th>No. Of Pass</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {data.length > 0 ? (
+                                data.map((item) => (
+                                    <tr key={item._id} className='text-center'>
+                                        <td>{item._id}</td>
+                                        <td>{item.name}</td>
+                                        <td>{item.email}</td>
+                                        <td>{item.phnumber}</td>
+                                        <td>{item.area}</td>
+                                        <td>{item.pass}</td>
+                                    </tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan="6" className="text-center">No data available</td>
+                                </tr>
+                            )}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </>
     );
 };
 
 export default Datalist;
-
