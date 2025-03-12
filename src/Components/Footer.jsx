@@ -6,7 +6,7 @@ function Footer() {
             <div className='container'>
                 <div style={{ fontFamily: "Sora, Sans-serif" }}>
                     <p className='h3'>  Venue : Sardar Patel Smruti Bhavan - Varachha Main Road Hira Nagar, Mini Bazar, Khodiyar Nagar, Surat.</p>
-                    <p className='h3 p-4 pb-0 mb-3'><span className="p-1 px-3 rounded-4" style={{ backgroundColor: "#f17f00" }}>TO BOOK YOUR SEAT CALL NOW</span></p>
+                    <p className='h3 p-4 pb-0 mb-3 Call_tittle'><span className="p-1 px-3 rounded-4" style={{ backgroundColor: "#f17f00" }}>TO BOOK YOUR SEAT CALL NOW</span></p>
                   
 
                     <div className="row g-0 g-lg-3 d-block d-lg-flex justify-content-center align-items-center">

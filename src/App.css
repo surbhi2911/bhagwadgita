@@ -96,7 +96,7 @@
 }
 
 .textheight {
-  line-height: 1.6
+  line-height: 1.6;
 }
 
 /* transform life end */
@@ -166,7 +166,11 @@
   background-position: center;
   background-size: cover;
 }
-
+@media (max-width: 768px) {
+  .Call_tittle {
+    font-size: 15px !important;
+  }
+}
 /* footer end */
 
 /* buy now form start */
@@ -196,7 +200,6 @@
 }
 
 @media (max-width: 991px) {
-
   .TicketForm_bg::before,
   .TicketForm_bg::after {
     content: none;
@@ -238,8 +241,6 @@
 }
 
 /* buy now form end */
-
-
 
 .form-control:focus {
   box-shadow: none !important;
