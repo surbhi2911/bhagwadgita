@@ -82,13 +82,13 @@ function AdhyatmikQue() {
 
             <div className="lightviolet">
                 <div className="container p-3 p-md-5">
-                    <div className='title text-white text-center px-2 px-md-4'>
+                    <div className='title text-white text-center px-2 px-md-4 text-capitalize'>
                         "Unveil the Knowledge of Bhagavad Gita with Paras Pandhi and <span className='orangecolor'>Eminent Sponsors of India</span>"
                     </div>
                     <div className="row d-flex text-center justify-content-center mt-5">
                         {logos.map((logo, index) => (
                             <div key={index} className="col-12 col-md-6 col-lg-3 col-sm-6 mb-4">
-                                <div className="d-flex justify-content-center bg-white w-100 h-100" style={{ border: "5px solid var(--orange)", borderRadius: "0px 30px 0px 30px" }}>
+                                <div className="d-flex justify-content-center bg-white w-100 h-100 rounded-4" style={{ border: "4px solid var(--orange)" }}>
                                     <img
                                         src={logo.src}
                                         alt={logo.alt}
@@ -99,17 +99,17 @@ function AdhyatmikQue() {
                         ))}
                     </div>
 
-                    <div className='title text-danger text-center px-2 px-md-4 my-3 my-lg-5'>
-                        "BHAGWAD GEETA COURCE<span className='orangecolor'> Media Partner</span>"
+                    <div className='title text-white text-center px-2 px-md-4 my-3 my-lg-5 text-capitalize'>
+                        " Bhagavad Gita Cource<span className='orangecolor'> Media Partner</span> "
                     </div>
                     <div className="row d-flex text-center justify-content-center">
                         <div className="col-12 col-md-6 col-lg-3 col-sm-6 mb-4">
-                            <div className="d-flex justify-content-center bg-white w-100 h-100" style={{ border: "5px solid var(--orange)", borderRadius: "0px 30px 0px 30px" }}>
+                            <div className="d-flex justify-content-center bg-white w-100 h-100 rounded-4" style={{ border: "4px solid var(--orange)" }}>
                                 <img
                                     src={require("../Images/City Tadka logo.jpg")}
                                     alt=""
-                                    className="img-fluid object-fit-contain"
-                                    style={{ borderRadius: "0px 30px 0px 30px" }}
+                                    className="img-fluid object-fit-contain rounded-4"
+                                   
                                 />
                             </div>
                         </div>
