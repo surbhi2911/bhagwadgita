@@ -111,11 +111,11 @@ function Buynow() {
                         <div className="row d-flex justify-content-center align-items-center">
                             <div className="col-12 col-lg-6 p-4 p-lg-5">
                                 <div className="h-100">
-                                    <div className="d-flex gap-2 align-items-center">
-                                        <div className="shadow rounded-circle" style={{ width: "70px", height: "70px" }}>
+                                    <div className="row gap-2 align-items-center">
+                                        <div className="rounded-circle col-3">
                                             <img src={require('../Images/social army Logo.jpg')} className="img-fluid object-fit-cover rounded-circle" alt="" />
                                         </div>
-                                        <div className="title fs-5 ps-1">Social Unity Charitable Trust</div>
+                                        <div className="title fs-4 ps-1 col-8">Social Army Trust</div>
                                     </div>
                                     <div className="title fs-3 mt-3 mb-2">Bhagavad Gita Course In Surat</div>
                                     <div className="rounded" style={{ width: "50px", border: "3px solid var(--orange)" }}></div>
@@ -181,7 +181,7 @@ function Buynow() {
                                                 <option value="Valenja">Valenja</option>
                                                 <option value="Amroli">Amroli</option>
                                                 <option value="Adajan">Adajan</option>
-                                                <option value="Ghoddodroad">Ghod_Dod Road</option>
+                                                <option value="Ghoddodroad">Ghod Dod Road</option>
                                                 <option value="Althan">Althan</option>
                                                 <option value="Punagam">Punagam</option>
                                                 <option value="Puna_Parvat-Patiya">Puna(Parvat-Patiya)</option>
@@ -202,8 +202,7 @@ function Buynow() {
                                             <div className='text-danger w-75 ms-auto'>{errormsg.pass}</div>
                                         </div>
 
-                                        {/* Submit Button */}
-                                        <div className="w-100 mt-4">
+                                       <div className="w-100 mt-4">
                                             <Link to={""} className="text-decoration-none">
                                                 <button className="buttons w-100 btn text-light" type="button" onClick={savedata} style={{ fontFamily: "Sora, Sans-serif", fontWeight: 700 }}>Submit</button>
                                             </Link>
@@ -216,13 +215,12 @@ function Buynow() {
                 </div>
             </div>
 
-            {/* Success Popup */}
             {savedId && (
                 <div className="popup-overlay position-fixed w-100 h-100 d-flex justify-content-center align-items-center" onClick={() => setSavedId(null)}>
                     <div className="popup-content bg-white rounded text-center p-3">
                         <h3>Success!</h3>
                         <p>Your form has been submitted.</p>
-                        <p><strong>Saved ID : </strong> {savedId}</p>
+                        <p><strong>Saved ID :</strong> {savedId}</p>
                         <button className="px-3 py-2 border-0 text-white cursor-pointer rounded" onClick={() => {
                             navigator.clipboard.writeText(savedId);
                             setSavedId(null);
