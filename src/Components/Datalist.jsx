@@ -78,14 +78,14 @@ const Datalist = () => {
     const options = {
         filterType: 'checkbox',
         responsive: "standard",
-        print: false, 
+        print: false,
     };
 
     return (
         <>
-        <div className='orangecolor text-center p-3 display-6 fw-bold'>REGISTERED PASS DATA</div>
+            <div className='orangecolor text-center p-3 display-6 fw-bold'>REGISTERED PASS DATA</div>
             <MUIDataTable
-                
+
                 data={data}
                 columns={columns}
                 options={options}
