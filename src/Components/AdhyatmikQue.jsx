@@ -64,7 +64,7 @@ function AdhyatmikQue() {
                                         return (
                                             <div className='d-flex align-items-center py-1 '>
                                                 <div className='fs-5 d-flex align-items-center justify-content-center'><FaHandPointRight /></div>
-                                                <div className='ps-2 pera'>{x.pera}</div>
+                                                <div className='ps-2 pera gujfont'>{x.pera}</div>
                                             </div>
                                         )
                                     })
@@ -82,7 +82,7 @@ function AdhyatmikQue() {
 
             <div className="lightviolet">
                 <div className="container p-2">
-                    <div className='title text-white text-center px-2 px-md-4 text-capitalize'>
+                    <div className='title text-white text-center px-2 px-md-4 text-capitalize gujfont'>
                         "Unveil the Knowledge of Bhagavad Gita with Paras Pandhi and <span className='orangecolor'>Eminent Sponsors of India</span>"
                     </div>
                     <div className="container">

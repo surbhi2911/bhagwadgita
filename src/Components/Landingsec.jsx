@@ -29,7 +29,7 @@ function Landingsec() {
         <div className='darkviolet'>
             <div className="container">
                 <div className="">
-                    <div className='titlebg border-2 border border-danger  text-center '>
+                    <div className='titlebg border-2 border border-danger  text-center gujfont'>
                         <h5>After successfully delivering programs across various subjects, including a Bhagavad Gita course, we are now organizing the Bhagavad Gita course for the second time.</h5>
                     </div>
                     <div className='text-center text-white fw-bold'>

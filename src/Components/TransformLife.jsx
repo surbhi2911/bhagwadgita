@@ -5,7 +5,7 @@ function TransformLife() {
 
   return (
     <div className='lightviolet p-3'>
-      <div className=" darkviolet orangecolor title  text-center">
+      <div className=" darkviolet orangecolor title  text-center gujfont">
       Transform Your Life
       </div>
    
@@ -13,8 +13,11 @@ function TransformLife() {
  
 
     <div className="text-center py-3">
-        <div className='orangecolor textsizefont '>"First Time In Surat"</div>
-    <h1 className="text-white   title">
+      
+    <h1 className="orangecolor   title gujfont">
+    " First Time In Surat "
+        </h1>
+    <h1 className="text-white   title gujfont">
     Philosophy With <span className='text-danger'>Western Kirtan</span> Deep Wisdom, Soulful Devotion.
         </h1>
     </div>
