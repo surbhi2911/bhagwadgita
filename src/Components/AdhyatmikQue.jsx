@@ -62,7 +62,7 @@ function AdhyatmikQue() {
                                 {
                                     data.map((x, i) => {
                                         return (
-                                            <div className='d-flex align-items-center py-1 '>
+                                            <div key={i} className='d-flex align-items-center py-1 '>
                                                 <div className='fs-5 d-flex align-items-center justify-content-center'><FaHandPointRight /></div>
                                                 <div className='ps-2 pera gujfont'>{x.pera}</div>
                                             </div>
