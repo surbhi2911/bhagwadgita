@@ -42,7 +42,7 @@ function Footer() {
                                             {`+91 ${number}`}
                                         </div>
                                         <div
-                                            className='text-success fs-4 d-flex align-items-center justify-content-center ms-1 cursor-pointer'
+                                            className='text-success fs-3 d-flex align-items-center justify-content-center ms-1 cursor-pointer'
                                             onClick={() => openWhatsApp(number)}
                                             style={{ cursor: 'pointer' }}
                                         >
