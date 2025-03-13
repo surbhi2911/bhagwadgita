@@ -74,14 +74,14 @@ function AdhyatmikQue() {
                     </div>
 
                     <div className="col-12 lightviolet text-white text-center mt-1 fs-5 fw-bold p-2 rounded-2">
-                        <h2 className='fw-bold gujfont'>કાળ + પ્રકૃતિનાં ગુણોનો અભ્યાસ + કર્મનો સિદ્ધાંત = <span className='text-danger'> પરિણામ</span></h2>
-                        <h2 className='fw-bold gujfont'>પરિણામ + ગીતાજ્ઞાન = <span className='text-danger'> સફળતા</span></h2>
+                        <h2 className='fw-bold gujfont ' style={{lineHeight:1.6}}>કાળ + પ્રકૃતિનાં ગુણોનો અભ્યાસ + કર્મનો સિદ્ધાંત = <span className='text-danger'> પરિણામ</span></h2>
+                        <h2 className='fw-bold gujfont ' style={{lineHeight:1.6}}>પરિણામ + ગીતાજ્ઞાન = <span className='text-danger'> સફળતા</span></h2>
                     </div>
                 </div>
             </div>
 
             <div className="lightviolet">
-                <div className="container p-3">
+                <div className="container p-2">
                     <div className='title text-white text-center px-2 px-md-4 text-capitalize'>
                         "Unveil the Knowledge of Bhagavad Gita with Paras Pandhi and <span className='orangecolor'>Eminent Sponsors of India</span>"
                     </div>
