@@ -54,7 +54,7 @@ function AdhyatmikQue() {
                     <div className="row g-3">
                         <div className="col-12 col-lg-6">
                             <div className="h-100">
-                                <img src="https://geeta.paraspandhi.com/wp-content/uploads/2024/06/2final.jpeg" alt="" className='img-fluid object-fit-cover rounded-4 border border-2 ' />
+                                <img src={require("../Images/adhyatmik que_image.jpg")} alt="" className='img-fluid object-fit-cover rounded-4 border border-2 ' />
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 ">

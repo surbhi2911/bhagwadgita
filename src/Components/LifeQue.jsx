@@ -45,7 +45,7 @@ function LifeQue() {
     </div>
     <div className="col-12 col-lg-6">
 <div className="h-100">
-    <img src="https://geeta.paraspandhi.com/wp-content/uploads/2024/06/1final.jpg" alt="" className='img-fluid object-fit-cover rounded-4 border border-2 '/>
+    <img src={require("../Images/life que_image.jpg")} alt="" className='img-fluid object-fit-cover rounded-4 border border-2 '/>
 </div>
     </div>
 </div>
@@ -55,7 +55,7 @@ function LifeQue() {
 <div className=' text-center  container' >
   <div className="row d-flex align-items-center justify-content-center">
     <div className="col-12 col-md-6 col-lg-7">
-    <img src="https://geeta.paraspandhi.com/wp-content/uploads/2024/06/Geeta.japg_-2.jpg" alt="" className='img-fluid object-fit-cover w-100 h-100 rounded-4 border border-2 border-white' />
+    <img src={require("../Images/bhagwadgeeta_image.jpg")} alt="" className='img-fluid object-fit-cover w-100 h-100 rounded-4 border border-2 border-white' />
     </div>
   </div>
 </div>
