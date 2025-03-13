@@ -131,10 +131,10 @@ function Buynow() {
                                     </div>
                                     <div className="my-3">
                                         <div className="fw-bold">Contact Us :</div>
-                                        <Link to={"mailto:info@paraspandhi.com"} className="text-decoration-none text-dark contact_menu">
+                                        <Link to={"mailto:official@socialarmytrust.com"} className="text-decoration-none text-dark contact_menu">
                                             <div className="my-1"><IoMail className="me-2" /> <span>official@socialarmytrust.com</span></div>
                                         </Link>
-                                        <Link to={"tel:9909919894"} className="text-decoration-none text-dark contact_menu">
+                                        <Link to={"tel:+91 90676 65653"} className="text-decoration-none text-dark contact_menu">
                                             <div><MdCall className="me-2" /> <span>+91 90676 65653</span></div>
                                         </Link>
                                     </div>
