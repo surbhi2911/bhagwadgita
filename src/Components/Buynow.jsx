@@ -97,7 +97,9 @@ function Buynow() {
                 console.log(res.data);
                 setSavedId(res.data._id);
                 setobj({ ...blankobj });
-            });
+            }).catch(function (error) {
+                alert("Phnumber is already in use");
+            })
         }
 
         seterrormsg({ ...errormsg });
