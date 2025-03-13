@@ -119,7 +119,7 @@ function Buynow() {
                                         </div>
                                         <div className="title fs-4 ps-1 col-8 gujfont">Social Army Trust</div>
                                     </div>
-                                    <div className="title fs-3 mt-3 mb-2 gujfont">Bhagavad Gita Course In Surat</div>
+                                    <div className="title fs-3 mt-3 mb-2 gujfont">Shreemad Bhagavad Gita Course In Surat</div>
                                     <div className="rounded" style={{ width: "50px", border: "3px solid var(--orange)" }}></div>
                                     <div className="my-3">
                                         <div><span className="fw-bold gujfont">Date :</span> 9, 10, 11 April 2025</div>
@@ -143,7 +143,7 @@ function Buynow() {
                             <div className="col-12 col-lg-6 px-2 pb-4 p-lg-5">
                                 <div className="h-100">
                                     <div className="bg-white shadow p-4">
-                                        <div className="title fs-5 gujfont">Bhagavad Gita Course Registration Form</div>
+                                        <div className="title fs-5 gujfont"> Shreemad Bhagavad Gita Course Registration Form</div>
                                         <div className="rounded mt-2" style={{ width: "50px", border: "3px solid var(--orange)" }}></div>
 
                                         <div className="w-100 mt-4">

@@ -30,10 +30,10 @@ function Landingsec() {
             <div className="container">
                 <div className="">
                     <div className='titlebg border-2 border border-danger  text-center gujfont'>
-                        <h5>After successfully delivering programs across various subjects, including a Bhagavad Gita course, we are now organizing the Bhagavad Gita course for the second time.</h5>
+                        <h5>After successfully delivering programs across various subjects, including a Shreemad Bhagavad Gita course, we are now organizing the Shreemad Bhagavad Gita course for the second time.</h5>
                     </div>
                     <div className='text-center text-white fw-bold'>
-                        <h2 className='title pt-3'><span className="text-danger"> Bhagavad Gita </span> Course In <span className="yellowcolor">Surat</span></h2>
+                        <h2 className='title pt-3'><span className="text-danger"> Shreemad Bhagavad Gita </span> Course In <span className="yellowcolor">Surat</span></h2>
                     </div>
                     <div className="row d-flex justify-content-center py-3 ">
                         <div className="col-12 col-md-6 col-lg-6">

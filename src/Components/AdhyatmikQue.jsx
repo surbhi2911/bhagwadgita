@@ -17,10 +17,10 @@ function AdhyatmikQue() {
             pera: "શું એ ઈશ્વર સુધી પહોંચવા માટે માર્ગદર્શક કે ગુરુની જરૂર પડે ખરી?",
         },
         {
-            pera: "ગર્ભાવસ્થાના પહેલા કોઈ માતા ને ઇચ્છિત સંતાન પ્રાપ્ત કરવામાં ભગવદ્ ગીતા કઈ રીતે મદદરૂપ થઇ શકે?",
+            pera: "ગર્ભાવસ્થાના પહેલા કોઈ માતા ને ઇચ્છિત સંતાન પ્રાપ્ત કરવામાં શ્રીમદ્ ભગવદ્ ગીતા કઈ રીતે મદદરૂપ થઇ શકે?",
         },
         {
-            pera: "ગર્ભમાં જીવ આવ્યા બાદ ભગવદ્ ગીતા સાંભળવાથી બાળક પર શો પ્રભાવ પડે છે?",
+            pera: "ગર્ભમાં જીવ આવ્યા બાદ શ્રીમદ્ ભગવદ્ ગીતા સાંભળવાથી બાળક પર શો પ્રભાવ પડે છે?",
         },
     ]
 
@@ -47,7 +47,7 @@ function AdhyatmikQue() {
         <>
             <div className='darkviolet'>
                 <div className=" yellowcolor lightviolet title  text-center gujfont">
-                અધ્યાત્મિક જીવનના પ્રશ્નો
+                આધ્યાત્મિક જીવનના પ્રશ્નો
                 </div>
 
                 <div className="container  ">
@@ -83,7 +83,7 @@ function AdhyatmikQue() {
             <div className="lightviolet">
                 <div className="container p-2">
                     <div className='title text-white text-center px-2 px-md-4 text-capitalize gujfont'>
-                        "Unveil the Knowledge of Bhagavad Gita with Paras Pandhi and <span className='orangecolor'>Eminent Sponsors of India</span>"
+                        "Unveil the Knowledge of Shreemad Bhagavad Gita with Paras Pandhi and <span className='orangecolor'>Eminent Sponsors of India</span>"
                     </div>
                     <div className="container">
                         <div className="row d-flex text-center justify-content-center my-2 bg-white col-md-12 col-8 mx-auto" style={{ border: "4px solid var(--orange)" }}>
