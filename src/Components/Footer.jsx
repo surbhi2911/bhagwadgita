@@ -35,7 +35,7 @@ function Footer() {
                             <div key={colIndex} className="col-12 col-md-6 col-lg-3">
                                 {column.map((number, rowIndex) => (
                                     <div key={rowIndex} className='bg-light text-dark p-2 fw-bold rounded-3 rounded-top-0 mt-lg-2 mt-1 d-flex align-items-center justify-content-between'>
-                                        <div className='text-dark' onClick={() => makeCall(number)}>
+                                        <div className='text-dark' onClick={() => makeCall(number)}   style={{ cursor: 'pointer' }}>
                                             {`+91 ${number}`}
                                         </div>
                                         <div className='d-flex'>
