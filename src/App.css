@@ -72,7 +72,7 @@
 /* landing end */
 /* life que start */
 .bgparas {
- 
+
   background-image: url("./Images/feather_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,7 +163,8 @@
   box-shadow: inset rgba(0, 0, 0, 0.58) 0px 0px 0px 1500px;
   background-image: url("../src/Images/untitled-1-17.jpg");
   background-repeat: no-repeat;
-  background-position:bottom center;
+  background-position: 0px 0px;
+  background-attachment: fixed;
   background-size: cover;
 
 }
@@ -173,10 +174,12 @@
     font-size: 15px !important;
   }
 }
+
 @media (max-width: 576px) {
   .footerbg {
     background-image: url("../src/Images/ImportedPhoto_1741755792907.jpg") !important;
     background-position: center center !important;
+    background-attachment: scroll;
   }
 }
 
@@ -209,6 +212,7 @@
 }
 
 @media (max-width: 991px) {
+
   .TicketForm_bg::before,
   .TicketForm_bg::after {
     content: none;
