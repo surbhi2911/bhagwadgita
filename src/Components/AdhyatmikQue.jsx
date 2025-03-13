@@ -45,12 +45,12 @@ function AdhyatmikQue() {
 
     return (
         <>
-            <div className='darkviolet py-5'>
+            <div className='darkviolet py-3'>
                 <div className=" yellowcolor lightviolet title  text-center gujfont">
-                    વ્યવહારિક જીવનના પ્રશ્નો
+                અધ્યાત્મિક જીવનના પ્રશ્નો
                 </div>
 
-                <div className="container py-3 py-lg-5">
+                <div className="container py-3 ">
                     <div className="row g-3">
                         <div className="col-12 col-lg-6">
                             <div className="h-100">
@@ -73,7 +73,7 @@ function AdhyatmikQue() {
                         </div>
                     </div>
 
-                    <div className="col-12 lightviolet text-white text-center mt-5 fs-5 fw-bold p-3 rounded-2">
+                    <div className="col-12 lightviolet text-white text-center mt-4 fs-5 fw-bold p-3 rounded-2">
                         <h2 className='fw-bold gujfont'>કાળ + પ્રકૃતિનાં ગુણોનો અભ્યાસ + કર્મનો સિદ્ધાંત = <span className='text-danger'> પરિણામ</span></h2>
                         <h2 className='fw-bold gujfont'>પરિણામ + ગીતાજ્ઞાન = <span className='text-danger'> સફળતા</span></h2>
                     </div>
@@ -81,25 +81,29 @@ function AdhyatmikQue() {
             </div>
 
             <div className="lightviolet">
-                <div className="container p-3 p-md-5">
+                <div className="container p-3">
                     <div className='title text-white text-center px-2 px-md-4 text-capitalize'>
                         "Unveil the Knowledge of Bhagavad Gita with Paras Pandhi and <span className='orangecolor'>Eminent Sponsors of India</span>"
                     </div>
-                    <div className="row d-flex text-center justify-content-center mt-5">
-                        {logos.map((logo, index) => (
-                            <div key={index} className="col-12 col-md-6 col-lg-3 col-sm-6 mb-4">
-                                <div className="d-flex justify-content-center bg-white w-100 h-100 rounded-4" style={{ border: "4px solid var(--orange)" }}>
-                                    <img
-                                        src={logo.src}
-                                        alt={logo.alt}
-                                        className="img-fluid rounded-3 object-fit-contain"
-                                    />
+                    <div className="container">
+                        <div className="row d-flex text-center justify-content-center my-2 bg-white col-md-12 col-8 mx-auto" style={{ border: "4px solid var(--orange)" }}>
+                            {logos.map((logo, index) => (
+                                <div key={index} className="col-8 col-md-6 col-lg-3 col-sm-6 px-0">
+                                    <div className="d-flex justify-content-center bg-white w-100 h-100 rounded-4" >
+                                        <img
+                                            src={logo.src}
+                                            alt={logo.alt}
+                                            height={200}
+                                            width={200}
+                                            className="img-fluid rounded-3 object-fit-contain"
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
 
-                    <div className='title text-white text-center px-2 px-md-4 my-3 my-lg-5 text-capitalize'>
+                    {/* <div className='title text-white text-center px-2 px-md-4 my-3 my-lg-5 text-capitalize'>
                         " Bhagavad Gita Cource<span className='orangecolor'> Media Partner</span> "
                     </div>
                     <div className="row d-flex text-center justify-content-center">
@@ -109,11 +113,11 @@ function AdhyatmikQue() {
                                     src={require("../Images/City Tadka logo.jpg")}
                                     alt=""
                                     className="img-fluid object-fit-contain rounded-4"
-                                   
+
                                 />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

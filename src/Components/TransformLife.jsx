@@ -35,41 +35,23 @@ function TransformLife() {
         },
     ]
   return (
-    <div className='lightviolet py-5'>
+    <div className='lightviolet py-1'>
       <div className=" darkviolet orangecolor title  text-center">
       Transform Your Life
       </div>
-      <h3 className='text-white text-capitalize title container text-center p-2 textheight '>WHO SHOULD <span className='text-success'>ATTEND</span> THIS <span className='text-success border-bottom border-success border-4'>
-      GRAND BHAGAVAD GITA COURCE</span></h3>
-
+   
       <div className="container">
-        <div className="row pt-3 pt-md-5 d-flex align-items-center
-        justify-content-center ">
-         {
-            transform.map((x,i)=>{
-                return(
-                    <div className="col-12 col-md-3 px-3 my-3" key={i}>
-                    <div className="h-100 darkviolet  borderstyle p-2">
-                        <div className='text-white d-flex align-items-center justify-content-center'>
-                            <div className='display-6  d-flex align-items-center justify-content-center'>{x.icon}</div>
-                            <div className='fw-medium ps-2 fs-5'>{x.text}</div>
-                        </div>
-                    </div>
-                </div>
-                )
-            })
-         }
-        </div>
+ 
 
     <div className="text-center py-3">
+        <div className='orangecolor textsizefont '>"First Time In Surat"</div>
     <h1 className="text-white   title">
-        Most Importantly, Who Should Not Miss This
+    Philosophy With Western Kirtan Deep Wisdom, Soulful Devotion.
         </h1>
-        <div className='orangecolor textsizefont '>"Golden Opportunity"</div>
     </div>
 
 
-    <div className="row pb-3 pb-md-5 d-flex align-items-center
+    <div className="row pb-1 d-flex align-items-center
         justify-content-center ">
          {
             transform2.map((x,i)=>{
