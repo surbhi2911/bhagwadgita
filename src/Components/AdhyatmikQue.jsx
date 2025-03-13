@@ -45,12 +45,12 @@ function AdhyatmikQue() {
 
     return (
         <>
-            <div className='darkviolet py-3'>
+            <div className='darkviolet'>
                 <div className=" yellowcolor lightviolet title  text-center gujfont">
                 અધ્યાત્મિક જીવનના પ્રશ્નો
                 </div>
 
-                <div className="container py-3 ">
+                <div className="container  ">
                     <div className="row g-3">
                         <div className="col-12 col-lg-6">
                             <div className="h-100">
@@ -73,7 +73,7 @@ function AdhyatmikQue() {
                         </div>
                     </div>
 
-                    <div className="col-12 lightviolet text-white text-center mt-4 fs-5 fw-bold p-3 rounded-2">
+                    <div className="col-12 lightviolet text-white text-center mt-1 fs-5 fw-bold p-2 rounded-2">
                         <h2 className='fw-bold gujfont'>કાળ + પ્રકૃતિનાં ગુણોનો અભ્યાસ + કર્મનો સિદ્ધાંત = <span className='text-danger'> પરિણામ</span></h2>
                         <h2 className='fw-bold gujfont'>પરિણામ + ગીતાજ્ઞાન = <span className='text-danger'> સફળતા</span></h2>
                     </div>

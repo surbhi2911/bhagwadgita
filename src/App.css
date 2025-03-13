@@ -161,8 +161,7 @@
 /* footer start */
 .footerbg {
   box-shadow: inset rgba(0, 0, 0, 0.58) 0px 0px 0px 1500px;
-  background-image: url("https://sc0.blr1.cdn.digitaloceanspaces.com/article/117799-egdpzjbvlm-1555587135.jpg");
-  /* background-image: url("https://t3.ftcdn.net/jpg/08/00/16/08/240_F_800160845_M21bipiiHdJQLrgHs5d8WLuCSStH4SbD.jpg"); */
+  background-image: url("../src/Images/untitled-1-17.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -173,10 +172,11 @@
   .Call_tittle {
     font-size: 15px !important;
   }
-
+}
+@media (max-width: 576px) {
   .footerbg {
-    background-repeat: repeat;
-    background-size: 80% auto;
+    background-image: url("../src/Images/ImportedPhoto_1741755792907.jpg") !important;
+    background-position: center center !important;
   }
 }
 
@@ -209,7 +209,6 @@
 }
 
 @media (max-width: 991px) {
-
   .TicketForm_bg::before,
   .TicketForm_bg::after {
     content: none;

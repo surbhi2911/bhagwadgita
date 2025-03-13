@@ -35,7 +35,7 @@ function TransformLife() {
         },
     ]
   return (
-    <div className='lightviolet py-1'>
+    <div className='lightviolet '>
       <div className=" darkviolet orangecolor title  text-center">
       Transform Your Life
       </div>
@@ -43,7 +43,7 @@ function TransformLife() {
       <div className="container">
  
 
-    <div className="text-center py-3">
+    <div className="text-center py-1">
         <div className='orangecolor textsizefont '>"First Time In Surat"</div>
     <h1 className="text-white   title">
     Philosophy With Western Kirtan Deep Wisdom, Soulful Devotion.

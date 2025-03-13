@@ -7,12 +7,17 @@ function Tickets() {
             <div className='container'>
                 <div className='row d-flex justify-content-center align-items-center align-content-center'>
                     <div className='col-12 col-lg-6'>
-                        <div className="h-100">
+                        <div className="h-100 ">
                             <div className='py-4 py-lg-5'>
                                 <div className='text-center'>
                                     <div className='bg-light rounded-4 p-3 mx-auto '>
-                                        <div className='rounded rounded-bottom-0 my-3' style={{ background: '#d37c00' }}>
-                                            <div className='py-4' style={{ fontFamily: "Sora, Sans-serif", fontSize: "30px", fontWeight: 800, textTransform: "uppercase", lineHeight: "36px" }}> Donate <br />₹ 200</div>
+                                        <div className='rounded rounded-bottom-0 my-3 p-3' style={{ background: '#d37c00' }}>
+                                            <div className='pt-4' style={{ fontFamily: "Sora, Sans-serif", fontSize: "30px", fontWeight: 800, textTransform: "uppercase", lineHeight: "36px" }}> Token Amount
+                                       </div>
+                                       <div>  <span className='fw-bold'>     (For 3 Days)</span></div>
+                                       <div className='display-6 fw-bold'>
+                                       ₹ 200
+                                       </div>
                                         </div>
                                         <Link to={"/buynow"} className='text-decoration-none'>
                                             <button className='buttons w-100 btn text-light' type="button" style={{ fontFamily: "Sora, Sans-serif", fontWeight: 700 }}>Register Now</button>
@@ -38,7 +43,7 @@ function Tickets() {
                                             <textarea
                                                 className='w-100 h-100 px-3 pt-2 form-control'
                                                 name="message"
-                                                rows={3}
+                                                rows={5}
                                                 placeholder='Write Your message Here...'
                                                 required
                                             ></textarea>
