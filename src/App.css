@@ -161,16 +161,25 @@
 /* footer start */
 .footerbg {
   box-shadow: inset rgba(0, 0, 0, 0.58) 0px 0px 0px 1500px;
-  background-image: url("https://feeds.abplive.com/onecms/images/uploaded-images/2022/06/19/885dd014b10e3e8111e4cfc8a4aefabdc07f0.jpg");
+  background-image: url("https://sc0.blr1.cdn.digitaloceanspaces.com/article/117799-egdpzjbvlm-1555587135.jpg");
+  /* background-image: url("https://t3.ftcdn.net/jpg/08/00/16/08/240_F_800160845_M21bipiiHdJQLrgHs5d8WLuCSStH4SbD.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-position: bottom center;
 }
+
 @media (max-width: 768px) {
   .Call_tittle {
     font-size: 15px !important;
   }
+
+  .footerbg {
+    background-repeat: repeat;
+    background-size: 80% auto;
+  }
 }
+
 /* footer end */
 
 /* buy now form start */
@@ -200,6 +209,7 @@
 }
 
 @media (max-width: 991px) {
+
   .TicketForm_bg::before,
   .TicketForm_bg::after {
     content: none;
