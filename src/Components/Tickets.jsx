@@ -6,28 +6,23 @@ function Tickets() {
         <div className='lightviolet'>
             <div className='container'>
                 <div className='row d-flex justify-content-center align-items-center align-content-center'>
-                    <div className='col-12 col-lg-6 col-md-6'>
+                    <div className='col-12 col-lg-6'>
                         <div className="h-100">
                             <div className='py-4 py-lg-5'>
                                 <div className='text-center'>
-                                    <div className='bg-light rounded-4 px-3 pt-2 pb-3 mx-auto '>
+                                    <div className='bg-light rounded-4 p-3 mx-auto '>
                                         <div className='rounded rounded-bottom-0 my-3' style={{ background: '#d37c00' }}>
                                             <div className='py-4' style={{ fontFamily: "Sora, Sans-serif", fontSize: "30px", fontWeight: 800, textTransform: "uppercase", lineHeight: "36px" }}> Donate <br />₹ 200</div>
                                         </div>
                                         <Link to={"/buynow"} className='text-decoration-none'>
                                             <button className='buttons w-100 btn text-light' type="button" style={{ fontFamily: "Sora, Sans-serif", fontWeight: 700 }}>Register Now</button>
                                         </Link>
-                                        <div className="text-dark fw-bold mt-4" style={{fontSize:"12px"}}>
-                                            નોંધ - રજીસ્ટ્રેશન કર્યા પછી
-                                            પાસ જે તે સેંટર પર આવશે એટલે કોલ કરી જાણકારી આપવા માં આવશે,
-                                            ફિઝિકલ પાસ લેવો ફરજીયાત છે.
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='col-12 col-lg-6 col-md-6'>
+                    <div className='col-12 col-lg-6'>
                         <div className="h-100">
                             <div className="rounded-4" style={{ backgroundColor: "#efe8fb" }}>
                                 <div className='text-center container p-4'>
@@ -43,7 +38,7 @@ function Tickets() {
                                             <textarea
                                                 className='w-100 h-100 px-3 pt-2 form-control'
                                                 name="message"
-                                                rows={5}
+                                                rows={3}
                                                 placeholder='Write Your message Here...'
                                                 required
                                             ></textarea>

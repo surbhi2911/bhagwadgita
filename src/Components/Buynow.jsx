@@ -202,7 +202,13 @@ function Buynow() {
                                             <div className='text-danger w-75 ms-auto'>{errormsg.pass}</div>
                                         </div>
 
-                                       <div className="w-100 mt-4">
+                                        <div className="text-dark fw-bold my-3" style={{ fontSize: "12px" }}>
+                                            નોંધ - રજીસ્ટ્રેશન કર્યા પછી
+                                            પાસ જે તે સેંટર પર આવશે એટલે કોલ કરી જાણકારી આપવા માં આવશે,
+                                            ફિઝિકલ પાસ લેવો ફરજીયાત છે.
+                                        </div>
+
+                                        <div className="w-100">
                                             <Link to={""} className="text-decoration-none">
                                                 <button className="buttons w-100 btn text-light" type="button" onClick={savedata} style={{ fontFamily: "Sora, Sans-serif", fontWeight: 700 }}>Submit</button>
                                             </Link>
