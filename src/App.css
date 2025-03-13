@@ -72,8 +72,8 @@
 /* landing end */
 /* life que start */
 .bgparas {
-  background-image: url("https://media.istockphoto.com/id/173857004/photo/peacock-feathers.jpg?s=612x612&w=0&k=20&c=UNlENkeI_bo60OjMLW06P2MsENHFGFD8hMSTajkKLJk=");
-  background-image: url("https://img.freepik.com/premium-photo/bright-peacock-feather-pattern-seamless-background_1295366-22121.jpg");
+
+  background-image: url("./Images/feather_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0px 0px 1500px 1000px #06001caf;
@@ -163,9 +163,10 @@
   box-shadow: inset rgba(0, 0, 0, 0.58) 0px 0px 0px 1500px;
   background-image: url("../src/Images/untitled-1-17.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0px 0px;
+  background-attachment: fixed;
   background-size: cover;
-  background-position: bottom center;
+
 }
 
 @media (max-width: 768px) {
@@ -173,10 +174,12 @@
     font-size: 15px !important;
   }
 }
+
 @media (max-width: 576px) {
   .footerbg {
     background-image: url("../src/Images/ImportedPhoto_1741755792907.jpg") !important;
     background-position: center center !important;
+    background-attachment: scroll;
   }
 }
 
@@ -191,7 +194,7 @@
     right: 0;
     width: 30%;
     height: 100%;
-    background-image: url("https://cdn.razorpay.com/static/assets/paymentpages/light_desktop.svg");
+    background-image: url("./Images/form_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -209,6 +212,7 @@
 }
 
 @media (max-width: 991px) {
+
   .TicketForm_bg::before,
   .TicketForm_bg::after {
     content: none;
