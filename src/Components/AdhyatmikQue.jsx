@@ -103,21 +103,7 @@ function AdhyatmikQue() {
                         </div>
                     </div>
 
-                    {/* <div className='title text-white text-center px-2 px-md-4 my-3 my-lg-5 text-capitalize'>
-                        " Bhagavad Gita Cource<span className='orangecolor'> Media Partner</span> "
-                    </div>
-                    <div className="row d-flex text-center justify-content-center">
-                        <div className="col-12 col-md-6 col-lg-3 col-sm-6 mb-4">
-                            <div className="d-flex justify-content-center bg-white w-100 h-100 rounded-4" style={{ border: "4px solid var(--orange)" }}>
-                                <img
-                                    src={require("../Images/City Tadka logo.jpg")}
-                                    alt=""
-                                    className="img-fluid object-fit-contain rounded-4"
-
-                                />
-                            </div>
-                        </div>
-                    </div> */}
+                   
                 </div>
             </div>
         </>

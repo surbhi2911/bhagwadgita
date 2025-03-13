@@ -4,8 +4,6 @@ import TransformLife from './TransformLife';
 import LifeQue from './LifeQue';
 import AdhyatmikQue from './AdhyatmikQue';
 import Imagegrid from './Imagegrid';
-import Tickets from './Tickets';
-
 import Footer from './Footer';
 import Ticketscard from './Ticketscard';
 
@@ -17,7 +15,6 @@ function Home() {
       <LifeQue/>
       <AdhyatmikQue/>
       <Imagegrid/>
-      {/* <Tickets/> */}
  <Ticketscard/>
       <Footer/>
     </>
