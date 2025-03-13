@@ -97,7 +97,9 @@ function Buynow() {
                 console.log(res.data);
                 setSavedId(res.data._id);
                 setobj({ ...blankobj });
-            });
+            }).catch(function (error) {
+                alert("Phnumber is already in use");
+            })
         }
 
         seterrormsg({ ...errormsg });
@@ -166,25 +168,25 @@ function Buynow() {
                                             <label htmlFor="area" className="w-25">Area</label>
                                             <select id="area" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="area" value={obj.area} onChange={getdata}>
                                                 <option value="">Select Nearest Area</option>
-                                                <option value="Yogi Chowk">Yogi Chowk</option>
+                                                <option value="Adajan">Adajan</option>
+                                                <option value="Althan">Althan</option>
+                                                <option value="Amroli">Amroli</option>
+                                                <option value="Gajera_Katargam">Gajera (Katargam)</option>
+                                                <option value="Ghoddodroad">Ghod Dod Road</option>
                                                 <option value="Hirabag">Hirabag</option>
-                                                <option value="Station">Station</option>
-                                                <option value="Mota Varachha">Mota Varachha</option>
-                                                <option value="Utran">Utran</option>
                                                 <option value="Kamrej">Kamrej</option>
-                                                <option value="Sarthana">Sarthana</option>
-                                                <option value="Katargam">Katargam</option>
-                                                <option value="Gajera_Katargam">Gajera(Katargam)</option>
-                                                <option value="Vesu">Vesu</option>
                                                 <option value="Kapodra">Kapodra</option>
+                                                <option value="Katargam">Katargam</option>
+                                                <option value="Mota Varachha">Mota Varachha</option>
+                                                <option value="Punagam">Punagam</option>
+                                                <option value="Puna_Parvat-Patiya">Puna (Parvat-Patiya)</option>
+                                                <option value="Railway Station Area">Railway Station Area</option>
+                                                <option value="Sarthana">Sarthana</option>
+                                                <option value="Utran">Utran</option>
                                                 <option value="Valak_Patiya">Valak Patiya</option>
                                                 <option value="Valenja">Valenja</option>
-                                                <option value="Amroli">Amroli</option>
-                                                <option value="Adajan">Adajan</option>
-                                                <option value="Ghoddodroad">Ghod Dod Road</option>
-                                                <option value="Althan">Althan</option>
-                                                <option value="Punagam">Punagam</option>
-                                                <option value="Puna_Parvat-Patiya">Puna(Parvat-Patiya)</option>
+                                                <option value="Vesu">Vesu</option>
+                                                <option value="Yogi Chowk">Yogi Chowk</option>
                                             </select>
                                             <div className='text-danger w-75 ms-auto'>{errormsg.area}</div>
                                         </div>
