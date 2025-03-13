@@ -7,6 +7,7 @@ import Imagegrid from './Imagegrid';
 import Tickets from './Tickets';
 
 import Footer from './Footer';
+import Ticketscard from './Ticketscard';
 
 function Home() {
   return (
@@ -16,8 +17,8 @@ function Home() {
       <LifeQue/>
       <AdhyatmikQue/>
       <Imagegrid/>
-      <Tickets/>
- 
+      {/* <Tickets/> */}
+ <Ticketscard/>
       <Footer/>
     </>
   );

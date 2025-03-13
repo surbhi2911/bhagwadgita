@@ -28,7 +28,7 @@ function Landingsec() {
     return (
         <div className='darkviolet'>
             <div className="container">
-                <div className="py-5">
+                <div className="">
                     <div className='titlebg border-2 border border-danger  text-center '>
                         <h5>After successfully delivering programs across various subjects, including a Bhagavad Gita course, we are now organizing the Bhagavad Gita course for the second time.</h5>
                     </div>
@@ -41,7 +41,7 @@ function Landingsec() {
                         </div>
                     </div>
 
-                    <div className="lightviolet mt-4">
+                    <div className="lightviolet ">
                         <div className="row px-1 d-flex align-items-center mx-1 justify-content-center">
                             {
                                 detail.map((x, i) => {

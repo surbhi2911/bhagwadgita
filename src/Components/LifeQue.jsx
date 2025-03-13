@@ -22,12 +22,12 @@ function LifeQue() {
     ]
   return (
    <>
-    <div className='darkviolet py-2'>
+    <div className='darkviolet'>
        <div className="gujfont yellowcolor lightviolet title  text-center">
        વ્યવહારિક જીવનના પ્રશ્નો
       </div>
 
-      <div className="container py-4">
+      <div className="container ">
 <div className="row g-3">
     <div className="col-12 col-lg-6 ">
         <div className="h-100 text-white d-flex flex-column justify-content-center ">
