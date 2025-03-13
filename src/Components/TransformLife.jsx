@@ -50,7 +50,7 @@ function TransformLife() {
         </h1>
     </div>
 
-
+{/* 
     <div className="row pb-1 d-flex align-items-center
         justify-content-center ">
          {
@@ -67,7 +67,7 @@ function TransformLife() {
                 )
             })
          }
-        </div>
+        </div> */}
       </div>
     </div>
   );
