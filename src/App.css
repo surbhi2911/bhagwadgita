@@ -177,7 +177,7 @@
 
 @media (max-width: 576px) {
   .footerbg {
-    background-image: url("../src/Images/ImportedPhoto_1741755792907.jpg") !important;
+    background-image: url("../src/Images/footer_bg.jpg") !important;
     background-position: center center !important;
     background-attachment: scroll;
   }
