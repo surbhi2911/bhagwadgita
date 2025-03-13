@@ -40,14 +40,14 @@ function Footer() {
                                         </div>
                                         <div className='d-flex'>
                                             <div
-                                                className='text-danger fs-3 d-flex align-items-center justify-content-center ms-1 cursor-pointer'
+                                                className='text-danger fs-3 d-flex align-items-center justify-content-center me-1 cursor-pointer'
                                                 onClick={() => makeCall(number)}
                                                 style={{ cursor: 'pointer' }}
                                             >
                                                 <BiSolidPhoneCall />
                                             </div>
                                             <div
-                                                className='text-success fs-3 d-flex align-items-center justify-content-center ms-1 cursor-pointer'
+                                                className='text-success fs-3 d-flex align-items-center justify-content-center ms-2 cursor-pointer'
                                                 onClick={() => openWhatsApp(number)}
                                                 style={{ cursor: 'pointer' }}
                                             >

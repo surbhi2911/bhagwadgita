@@ -15,7 +15,7 @@ function TransformLife() {
     <div className="text-center py-3">
         <div className='orangecolor textsizefont '>"First Time In Surat"</div>
     <h1 className="text-white   title">
-    Philosophy With Western Kirtan Deep Wisdom, Soulful Devotion.
+    Philosophy With <span className='text-danger'>Western Kirtan</span> Deep Wisdom, Soulful Devotion.
         </h1>
     </div>
 
