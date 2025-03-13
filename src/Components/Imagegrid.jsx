@@ -15,7 +15,7 @@ const images = [
 const ImageGrid = () => {
     return (
         <>
-            <div className="darkviolet py-5">
+            <div className="darkviolet py-3">
                 <div className="container">                
                 <div className="gujfont text-white  title  text-center py-3">
                     પારસ પાંધીના સફળ કાર્યક્રમો
