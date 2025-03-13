@@ -1,4 +1,5 @@
 import React from 'react';
+import { BiSolidPhoneCall } from 'react-icons/bi';
 import { FaSquareWhatsapp } from 'react-icons/fa6';
 
 function Footer() {
@@ -33,20 +34,25 @@ function Footer() {
                         {phoneNumbers.map((column, colIndex) => (
                             <div key={colIndex} className="col-12 col-md-6 col-lg-3">
                                 {column.map((number, rowIndex) => (
-                                    <div key={rowIndex} className='bg-light text-dark p-2 fw-bold rounded-3 rounded-top-0  mt-lg-2 mt-1 d-flex align-items-center justify-content-between'>
-                                        <div
-                                            className='cursor-pointer'
-                                            onClick={() => makeCall(number)}
-                                            style={{ cursor: 'pointer' }}
-                                        >
+                                    <div key={rowIndex} className='bg-light text-dark p-2 fw-bold rounded-3 rounded-top-0 mt-lg-2 mt-1 d-flex align-items-center justify-content-between'>
+                                        <div className='text-dark'>
                                             {`+91 ${number}`}
                                         </div>
-                                        <div
-                                            className='text-success fs-3 d-flex align-items-center justify-content-center ms-1 cursor-pointer'
-                                            onClick={() => openWhatsApp(number)}
-                                            style={{ cursor: 'pointer' }}
-                                        >
-                                            <FaSquareWhatsapp />
+                                        <div className='d-flex'>
+                                            <div
+                                                className='text-danger fs-3 d-flex align-items-center justify-content-center ms-1 cursor-pointer'
+                                                onClick={() => makeCall(number)}
+                                                style={{ cursor: 'pointer' }}
+                                            >
+                                                <BiSolidPhoneCall />
+                                            </div>
+                                            <div
+                                                className='text-success fs-3 d-flex align-items-center justify-content-center ms-1 cursor-pointer'
+                                                onClick={() => openWhatsApp(number)}
+                                                style={{ cursor: 'pointer' }}
+                                            >
+                                                <FaSquareWhatsapp />
+                                            </div>
                                         </div>
                                     </div>
                                 ))}
