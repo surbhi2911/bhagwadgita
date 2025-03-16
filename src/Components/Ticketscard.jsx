@@ -6,8 +6,8 @@ function Ticketscard() {
         <>
         <div className="lightviolet">
         <div className="container">
-                <div className="row g-3 py-2 py-lg-4">
-                    <div className="col-12 col-lg-6">
+                <div className="row g-3 py-2 py-lg-4 d-flex align-items-center justify-content-center">
+                    <div className="col-12 col-lg-6 ">
                         <div className="h-100 bg-white rounded-4 p-3 d-flex flex-column justify-content-between">
                             <div className='text-center rounded p-3 py-4 ' style={{backgroundColor:"var(--orange)"}}>
                                 <div className='fw-bold display-6'>
@@ -27,7 +27,7 @@ function Ticketscard() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-6">
+                    {/* <div className="col-12 col-lg-6">
                         <div className="h-100  rounded-4 p-3 "  style={{ backgroundColor: "#efe8fb" }}>
                         <div className='h4 fw-bold text-center' style={{ fontFamily: "Hind Vadodara" }}>
                                         વિશેષ આપના સવાલો આવકાર્ય છે
@@ -48,7 +48,7 @@ function Ticketscard() {
                                             ></textarea>
                                         </div>
 
-                                        {/* {/ Hidden input for spam prevention /} */}
+                                    
                                         <input type="hidden" name="_captcha" value="false" />
 
                                         <div className='col-12 mt-3'>
@@ -58,7 +58,7 @@ function Ticketscard() {
                                         </div>
                                     </form>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

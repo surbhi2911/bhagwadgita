@@ -17,10 +17,10 @@ function AdhyatmikQue() {
             pera: "શું એ ઈશ્વર સુધી પહોંચવા માટે માર્ગદર્શક કે ગુરુની જરૂર પડે ખરી?",
         },
         {
-            pera: "ગર્ભાવસ્થાના પહેલા કોઈ માતા ને ઇચ્છિત સંતાન પ્રાપ્ત કરવામાં ભગવદ્ ગીતા કઈ રીતે મદદરૂપ થઇ શકે?",
+            pera: "ગર્ભાવસ્થાના પહેલા કોઈ માતા ને ઇચ્છિત સંતાન પ્રાપ્ત કરવામાં શ્રીમદ્ ભગવદ્ ગીતા કઈ રીતે મદદરૂપ થઇ શકે?",
         },
         {
-            pera: "ગર્ભમાં જીવ આવ્યા બાદ ભગવદ્ ગીતા સાંભળવાથી બાળક પર શો પ્રભાવ પડે છે?",
+            pera: "ગર્ભમાં જીવ આવ્યા બાદ શ્રીમદ્ ભગવદ્ ગીતા સાંભળવાથી બાળક પર શો પ્રભાવ પડે છે?",
         },
     ]
 
@@ -47,7 +47,7 @@ function AdhyatmikQue() {
         <>
             <div className='darkviolet'>
                 <div className=" yellowcolor lightviolet title  text-center gujfont">
-                અધ્યાત્મિક જીવનના પ્રશ્નો
+                આધ્યાત્મિક જીવનના પ્રશ્નો
                 </div>
 
                 <div className="container  ">
@@ -62,9 +62,9 @@ function AdhyatmikQue() {
                                 {
                                     data.map((x, i) => {
                                         return (
-                                            <div className='d-flex align-items-center py-1 '>
+                                            <div key={i} className='d-flex align-items-center py-1 '>
                                                 <div className='fs-5 d-flex align-items-center justify-content-center'><FaHandPointRight /></div>
-                                                <div className='ps-2 pera'>{x.pera}</div>
+                                                <div className='ps-2 pera gujfont'>{x.pera}</div>
                                             </div>
                                         )
                                     })
@@ -74,16 +74,16 @@ function AdhyatmikQue() {
                     </div>
 
                     <div className="col-12 lightviolet text-white text-center mt-1 fs-5 fw-bold p-2 rounded-2">
-                        <h2 className='fw-bold gujfont'>કાળ + પ્રકૃતિનાં ગુણોનો અભ્યાસ + કર્મનો સિદ્ધાંત = <span className='text-danger'> પરિણામ</span></h2>
-                        <h2 className='fw-bold gujfont'>પરિણામ + ગીતાજ્ઞાન = <span className='text-danger'> સફળતા</span></h2>
+                        <h2 className='fw-bold gujfont ' style={{lineHeight:1.6}}>કાળ + પ્રકૃતિનાં ગુણોનો અભ્યાસ + કર્મનો સિદ્ધાંત = <span className='text-danger'> પરિણામ</span></h2>
+                        <h2 className='fw-bold gujfont ' style={{lineHeight:1.6}}>પરિણામ + ગીતાજ્ઞાન = <span className='text-danger'> સફળતા</span></h2>
                     </div>
                 </div>
             </div>
 
             <div className="lightviolet">
-                <div className="container p-3">
-                    <div className='title text-white text-center px-2 px-md-4 text-capitalize'>
-                        "Unveil the Knowledge of Bhagavad Gita with Paras Pandhi and <span className='orangecolor'>Eminent Sponsors of India</span>"
+                <div className="container p-2">
+                    <div className='title text-white text-center px-2 px-md-4 text-capitalize gujfont'>
+                        "Unveil the Knowledge of Shreemad Bhagavad Gita with Paras Pandhi and <span className='orangecolor'>Eminent Sponsors of India</span>"
                     </div>
                     <div className="container">
                         <div className="row d-flex text-center justify-content-center my-2 bg-white col-md-12 col-8 mx-auto" style={{ border: "4px solid var(--orange)" }}>
@@ -103,21 +103,7 @@ function AdhyatmikQue() {
                         </div>
                     </div>
 
-                    {/* <div className='title text-white text-center px-2 px-md-4 my-3 my-lg-5 text-capitalize'>
-                        " Bhagavad Gita Cource<span className='orangecolor'> Media Partner</span> "
-                    </div>
-                    <div className="row d-flex text-center justify-content-center">
-                        <div className="col-12 col-md-6 col-lg-3 col-sm-6 mb-4">
-                            <div className="d-flex justify-content-center bg-white w-100 h-100 rounded-4" style={{ border: "4px solid var(--orange)" }}>
-                                <img
-                                    src={require("../Images/City Tadka logo.jpg")}
-                                    alt=""
-                                    className="img-fluid object-fit-contain rounded-4"
-
-                                />
-                            </div>
-                        </div>
-                    </div> */}
+                   
                 </div>
             </div>
         </>
