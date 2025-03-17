@@ -44,7 +44,7 @@ function Footer() {
                                                 onClick={() => makeCall(number)}
                                                 style={{ cursor: 'pointer' }}
                                             >
-                                                <BiSolidPhoneCall />
+                                              <BiSolidPhoneCall />
                                             </div>
                                             <div
                                                 className='text-success fs-3 d-flex align-items-center justify-content-center ms-2 cursor-pointer'
