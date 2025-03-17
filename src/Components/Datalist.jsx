@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import * as XLSX from 'xlsx';
 
 const Datalist = () => {
     const [data, setData] = useState([]);
@@ -18,6 +19,26 @@ const Datalist = () => {
             });
     }, []);
 
+    const handleDownload = () => {
+        if (data.length === 0) return;
+
+        const formattedData = data.map(({ _id, name, email, phnumber, area, pass }, index) => ({
+            No: index + 1,
+            ID: _id,
+            Name: name,
+            Email: email,
+            "Phone No.": phnumber,
+            Area: area,
+            "No. of Pass": pass,
+        }));
+
+        const worksheet = XLSX.utils.json_to_sheet(formattedData);
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, "Pass Data");
+
+        XLSX.writeFile(workbook, "Registered_Pass_Data.xlsx");
+    };
+
     if (loading) {
         return (
             <div className="text-center mt-4 d-flex justify-content-center align-items-center vh-100">
@@ -36,6 +57,11 @@ const Datalist = () => {
         <>
             <div className='orangecolor text-center p-3 display-6 fw-bold'>REGISTERED PASS DATA</div>
             <div className="container">
+                <div className="d-flex justify-content-center justify-content-lg-end mb-3">
+                    <button className="btn btn-success" onClick={handleDownload}>
+                        Download Excel
+                    </button>
+                </div>
                 <div className="table-responsive">
                     <table className="table table-bordered table-striped">
                         <thead className="table-dark text-center">
@@ -60,12 +86,11 @@ const Datalist = () => {
                                         <td>{item.phnumber}</td>
                                         <td>{item.area}</td>
                                         <td>{item.pass}</td>
-                                        {/* <td>{}</td> */}
                                     </tr>
                                 ))
                             ) : (
                                 <tr>
-                                    <td colSpan="6" className="text-center">No data available</td>
+                                    <td colSpan="7" className="text-center">No data available</td>
                                 </tr>
                             )}
                         </tbody>
