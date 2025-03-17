@@ -11,12 +11,12 @@ function Home() {
   return (
     <>
       <Landingsec />
-      <TransformLife/>
-      <LifeQue/>
-      <AdhyatmikQue/>
-      <Imagegrid/>
- <Ticketscard/>
-      <Footer/>
+      <TransformLife />
+      <LifeQue />
+      <AdhyatmikQue />
+      <Imagegrid />
+      <Ticketscard />
+      <Footer />
     </>
   );
 }
