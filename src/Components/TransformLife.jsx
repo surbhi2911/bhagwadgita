@@ -53,7 +53,7 @@ function TransformLife() {
                     </div>
                     {/* <h1 className="text-white   title">
                         Philosophy With Western Kirtan Deep Wisdom, Soulful Devotion.
-                    </h1> */}
+                    </h1>   */}  
                 </div>
 
                 {/* 
