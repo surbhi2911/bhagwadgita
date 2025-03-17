@@ -1,39 +1,5 @@
 import React from 'react';
-import { FaBusinessTime, FaUserTie } from 'react-icons/fa';
-import { FaPersonPregnant } from 'react-icons/fa6';
-import { GrUserFemale } from 'react-icons/gr';
-import { PiStudentBold } from 'react-icons/pi';
-import { RiHeartsFill } from 'react-icons/ri';
-
 function TransformLife() {
-    let transform = [
-        {
-            icon: <FaUserTie />,
-            text: "Business Man"
-        },
-        {
-            icon: <GrUserFemale />,
-            text: "Housewife"
-        },
-        {
-            icon: <FaBusinessTime />,
-            text: "Self-Employed"
-        },
-    ]
-    let transform2 = [
-        {
-            icon: <RiHeartsFill />,
-            text: "New Married Couple"
-        },
-        {
-            icon: <FaPersonPregnant />,
-            text: "Pregnant Ladies"
-        },
-        {
-            icon: <PiStudentBold />,
-            text: "UPSC/GPSC Student"
-        },
-    ]
     return (
         <div className='lightviolet '>
 
@@ -53,7 +19,7 @@ function TransformLife() {
                     </div>
                     {/* <h1 className="text-white   title">
                         Philosophy With Western Kirtan Deep Wisdom, Soulful Devotion.
-                    </h1>   */}  
+                    </h1>   */}
                 </div>
 
                 {/* 
