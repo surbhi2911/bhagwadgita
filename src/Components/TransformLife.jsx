@@ -17,29 +17,7 @@ function TransformLife() {
                             <img src={require("../Images/SINGER.jpgs.jpg")} alt="" className='object-fit-contain rounded-4 border border-secondary border-4 w-100 h-75' />
                         </div>
                     </div>
-                    {/* <h1 className="text-white   title">
-                        Philosophy With Western Kirtan Deep Wisdom, Soulful Devotion.
-                    </h1>   */}
                 </div>
-
-                {/* 
-    <div className="row pb-1 d-flex align-items-center
-        justify-content-center ">
-         {
-            transform2.map((x,i)=>{
-                return(
-                    <div className="col-12 col-md-3 px-3 my-1" key={i}>
-                    <div className="h-100 darkviolet  borderstyle2 p-2">
-                        <div className='text-white d-flex align-items-center justify-content-center'>
-                            <div className='display-6  d-flex align-items-center justify-content-center'>{x.icon}</div>
-                            <div className='fw-medium ps-2 fs-5'>{x.text}</div>
-                        </div>
-                    </div>
-                </div>
-                )
-            })
-         }
-        </div> */}
             </div>
         </div>
     );

@@ -30,6 +30,8 @@ const Datalist = () => {
         return <div className="text-center text-danger mt-4">Error: {error.message}</div>;
     }
 
+    const totalPasses = data.reduce((total, item) => total + (item.pass || 0), 0);
+
     return (
         <>
             <div className='orangecolor text-center p-3 display-6 fw-bold'>REGISTERED PASS DATA</div>
@@ -38,6 +40,7 @@ const Datalist = () => {
                     <table className="table table-bordered table-striped">
                         <thead className="table-dark text-center">
                             <tr>
+                                <th>No.</th>
                                 <th>Id</th>
                                 <th>Name</th>
                                 <th>Email</th>
@@ -48,14 +51,16 @@ const Datalist = () => {
                         </thead>
                         <tbody>
                             {data.length > 0 ? (
-                                data.map((item) => (
+                                data.map((item, index) => (
                                     <tr key={item._id} className='text-center'>
+                                        <td>{index + 1}</td>
                                         <td>{item._id}</td>
                                         <td>{item.name}</td>
                                         <td>{item.email}</td>
                                         <td>{item.phnumber}</td>
                                         <td>{item.area}</td>
                                         <td>{item.pass}</td>
+                                        {/* <td>{}</td> */}
                                     </tr>
                                 ))
                             ) : (
@@ -64,6 +69,12 @@ const Datalist = () => {
                                 </tr>
                             )}
                         </tbody>
+                        <tfoot>
+                            <tr className="table-warning text-end">
+                                <td colSpan="6" className="fw-bold">Total Entry Passes</td>
+                                <td className="fw-bold">{totalPasses}</td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </div>
             </div>
