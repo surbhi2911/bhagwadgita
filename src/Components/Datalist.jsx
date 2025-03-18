@@ -90,9 +90,9 @@ const Datalist = () => {
                                 <th>Email</th>
                                 <th>Phone No.</th>
                                 <th>Area</th>
-                                <th>No. Of Pass</th>
-                                <th>date</th>
-                                <th>time</th>
+                                <th>Pass</th>
+                                <th>Date</th>
+                                <th>Time</th>
                             </tr>
                         </thead>
                         <tbody>
