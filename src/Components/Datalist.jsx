@@ -10,6 +10,8 @@ const Datalist = () => {
         fetch('https://geeta-backend.vercel.app/')
             .then(response => response.json())
             .then(data => {
+                console.log(data);
+
                 setData(data);
                 setLoading(false);
             })
@@ -18,19 +20,35 @@ const Datalist = () => {
                 setLoading(false);
             });
     }, []);
-
+    const formatDateTime = (isoString) => {
+        const date = new Date(isoString);
+        
+        // Format date as dd/mm/yy
+        const formattedDate = `${String(date.getDate()).padStart(2, '0')}/${String(date.getMonth() + 1).padStart(2, '0')}/${String(date.getFullYear()).slice(-2)}`;
+        
+        // Format time in HH:MM:SS AM/PM
+        const formattedTime = date.toLocaleTimeString();
+    
+        return { formattedDate, formattedTime };
+    };
+  
     const handleDownload = () => {
         if (data.length === 0) return;
 
-        const formattedData = data.map(({ _id, name, email, phnumber, area, pass }, index) => ({
-            No: index + 1,
-            ID: _id,
-            Name: name,
-            Email: email,
-            "Phone No.": phnumber,
-            Area: area,
-            "No. of Pass": pass,
-        }));
+        const formattedData = data.map(({ _id, name, email, phnumber, area, pass, updatedAt }, index) => {
+            const { formattedDate, formattedTime } = formatDateTime(updatedAt);
+            return {
+                No: index + 1,
+                ID: _id,
+                Name: name,
+                Email: email,
+                "Phone No.": phnumber,
+                Area: area,
+                "No. of Pass": pass,
+                Date: formattedDate,
+                Time: formattedTime,
+            };
+        });
 
         const worksheet = XLSX.utils.json_to_sheet(formattedData);
         const workbook = XLSX.utils.book_new();
@@ -73,21 +91,28 @@ const Datalist = () => {
                                 <th>Phone No.</th>
                                 <th>Area</th>
                                 <th>No. Of Pass</th>
+                                <th>date</th>
+                                <th>time</th>
                             </tr>
                         </thead>
                         <tbody>
                             {data.length > 0 ? (
-                                data.map((item, index) => (
-                                    <tr key={item._id} className='text-center'>
-                                        <td>{index + 1}</td>
-                                        <td>{item._id}</td>
-                                        <td>{item.name}</td>
-                                        <td>{item.email}</td>
-                                        <td>{item.phnumber}</td>
-                                        <td>{item.area}</td>
-                                        <td>{item.pass}</td>
-                                    </tr>
-                                ))
+                                data.map((item, index) => {
+                                    const { formattedDate, formattedTime } = formatDateTime(item.updatedAt);
+                                    return (
+                                        <tr key={item._id} className='text-center'>
+                                            <td>{index + 1}</td>
+                                            <td>{item._id}</td>
+                                            <td>{item.name}</td>
+                                            <td>{item.email}</td>
+                                            <td>{item.phnumber}</td>
+                                            <td>{item.area}</td>
+                                            <td>{item.pass}</td>
+                                            <td>{formattedDate}</td>
+                                            <td>{formattedTime}</td>
+                                        </tr>
+                                    );
+                                })
                             ) : (
                                 <tr>
                                     <td colSpan="7" className="text-center">No data available</td>
@@ -96,7 +121,7 @@ const Datalist = () => {
                         </tbody>
                         <tfoot>
                             <tr className="table-warning text-end">
-                                <td colSpan="6" className="fw-bold">Total Entry Passes</td>
+                                <td colSpan="8" className="fw-bold">Total Entry Passes</td>
                                 <td className="fw-bold">{totalPasses}</td>
                             </tr>
                         </tfoot>
