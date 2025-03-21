@@ -92,7 +92,7 @@ function Buynow() {
                 setSavedId(res.data._id);
                 setobj({ ...blankobj });
             }).catch(function (error) {
-                alert("Phnumber is already in use");
+                alert("Phnumber or email is already in use");
             })
         }
         seterrormsg({ ...errormsg });
