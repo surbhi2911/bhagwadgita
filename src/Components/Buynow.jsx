@@ -27,17 +27,11 @@ function Buynow() {
             }
         }
 
-        if (e.target.name === "email") {
-            if (e.target.value === "" || e.target.value === undefined) {
-                errormsg[e.target.name] = "E-mail is required!";
-            } else if (!e.target.value.includes("@gmail") && !e.target.value.includes("@yahoo") &&
-                e.target.value.includes("@outlook") &&
-                e.target.value.includes("@icloud") &&
-                e.target.value.includes("@hotmail")) {
+        if (name === "email") {
+            if (!value.trim()) errormsg[e.target.name] = "E-mail is required!";
+            else if (!/^[a-zA-Z0-9._%+-]+@(gmail|yahoo|outlook|icloud|hotmail)\.com$/.test(value))
                 errormsg[e.target.name] = "E-mail is not valid.";
-            } else {
-                errormsg[e.target.name] = "";
-            }
+            else errormsg[e.target.name] = "";
         }
 
         if (e.target.name === "phnumber") {
@@ -101,7 +95,6 @@ function Buynow() {
                 alert("Phnumber is already in use");
             })
         }
-
         seterrormsg({ ...errormsg });
     };
 
@@ -233,7 +226,7 @@ function Buynow() {
                             navigator.clipboard.writeText(savedId);
                             setSavedId(null);
                         }}>Copy ID</button>
-                        <div className="fw-bold mt-3">રજીસ્ટ્રેશન માટે ID જરૂરી છે, તેથી તેને સાચવી રાખજો અને કૉપિ કરવાનું ભૂલશો નહીં.</div>
+                        <div className="fw-bold mt-3">રજીસ્ટ્રેશન માટે ID જરૂરી છે, તેથી તેને સાચવી રાખજો અને કોપી કરવાનું ભૂલશો નહીં.</div>
                     </div>
                 </div>
             )}
