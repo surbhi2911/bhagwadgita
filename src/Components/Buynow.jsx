@@ -238,7 +238,7 @@ function Buynow() {
                             navigator.clipboard.writeText(savedId);
                             setSavedId(null);
                         }}>Copy ID</button>
-                        <div className="fw-bold mt-3">રજીસ્ટ્રેશન માટે ID જરૂરી છે, તેથી તેને સાચવી રાખજો અને કૉપિ કરવાનું ભૂલશો નહીં.</div>
+                        <div className="fw-bold mt-3">રજીસ્ટ્રેશન માટે ID જરૂરી છે, તેથી તેને સાચવી રાખજો અને કોપી કરવાનું ભૂલશો નહીં.</div>
                     </div>
                 </div>
             )}
