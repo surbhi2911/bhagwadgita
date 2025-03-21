@@ -27,11 +27,16 @@ function Buynow() {
             }
         }
 
-        if (name === "email") {
-            if (value !== "" && !/^[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com|outlook\.com|icloud\.com|hotmail\.com)$/i.test(value)) {
-                errormsg[name] = "E-mail is not valid.";
+        if (e.target.name === "email") {
+            if (e.target.value === "" || e.target.value === undefined) {
+                errormsg[e.target.name] = "E-mail is required!";
+            } else if (!e.target.value.includes("@gmail") && !e.target.value.includes("@yahoo") &&
+                e.target.value.includes("@outlook") &&
+                e.target.value.includes("@icloud") &&
+                e.target.value.includes("@hotmail")) {
+                errormsg[e.target.name] = "E-mail is not valid.";
             } else {
-                errormsg[name] = "";
+                errormsg[e.target.name] = "";
             }
         }
 
@@ -71,9 +76,9 @@ function Buynow() {
             errormsg.name = "Name is required!";
         }
 
-        // if (!obj.email === "" || obj.email === undefined) {
-        //     errormsg.email = "";
-        // }
+        if (!obj.email === "" || obj.email === undefined) {
+            errormsg.email = "E-mail is required!";
+        }
 
         if (!obj.phnumber === "" || obj.phnumber === undefined) {
             errormsg.phnumber = "Phone Number is required!";
@@ -149,23 +154,13 @@ function Buynow() {
 
                                         <div className="w-100 my-4">
                                             <label htmlFor="email" className="w-25">Email</label>
-                                            <input type="text" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="email" value={obj.email || ""} onChange={getdata} id="email" />
+                                            <input type="text" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="email" value={obj.email} onChange={getdata} id="email" />
                                             <div className='text-danger w-75 ms-auto'>{errormsg.email}</div>
                                         </div>
 
                                         <div className="w-100">
                                             <label htmlFor="phone" className="w-25">Phone</label>
-                                            {/* <input type="tel" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="phnumber" value={obj.phnumber} onChange={getdata} id="phone" /> */}
-                                            <input
-                                                type="tel"
-                                                className="w-75 input_form rounded border border-1 border-secondary px-2 py-1"
-                                                name="phnumber"
-                                                value={obj.phnumber || ""}
-                                                onChange={getdata}
-                                                onInput={(e) => e.target.value = e.target.value.replace(/\D/g, "")} // Restrict input to numbers only
-                                                maxLength="10"
-                                                id="phone"
-                                            />
+                                            <input type="tel" className="w-75 input_form rounded border border-1 border-secondary px-2 py-1" name="phnumber" value={obj.phnumber} onChange={getdata} id="phone" />
                                             <div className='text-danger w-75 ms-auto'>{errormsg.phnumber}</div>
                                         </div>
 
@@ -238,7 +233,7 @@ function Buynow() {
                             navigator.clipboard.writeText(savedId);
                             setSavedId(null);
                         }}>Copy ID</button>
-                        <div className="fw-bold mt-3">રજીસ્ટ્રેશન માટે ID જરૂરી છે, તેથી તેને સાચવી રાખજો અને કોપી કરવાનું ભૂલશો નહીં.</div>
+                        <div className="fw-bold mt-3">રજીસ્ટ્રેશન માટે ID જરૂરી છે, તેથી તેને સાચવી રાખજો અને કૉપિ કરવાનું ભૂલશો નહીં.</div>
                     </div>
                 </div>
             )}
